@@ -44,7 +44,7 @@ html {
     }
     .bin:after {
     display: block;
-    background: url("/assets/images/bin.png") bottom center no-repeat;
+    background: url("../images/bin.png") bottom center no-repeat;
     background-size: contain;
     content: '';
     width: 100%;
@@ -55,7 +55,7 @@ html {
     }
 
     .mouse {
-        background: url("/assets/images/mouse.png") bottom center no-repeat;
+        background: url("../images/mouse.png") bottom center no-repeat;
         background-size: 30%;
         position: absolute;
         top: 100%;
@@ -68,7 +68,7 @@ html {
         }
 
     .rat {
-    background: url("/assets/images/rat.png") bottom center no-repeat;
+    background: url("../images/rat.png") bottom center no-repeat;
     background-size: 30%;
     position: absolute;
     top: 100%;
