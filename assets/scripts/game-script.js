@@ -1,6 +1,7 @@
 let bins = document.querySelectorAll('.bin');
 let scoreBoard = document.querySelector('.score');
 let rats = document.querySelectorAll('.rat');
+let mice = document.querySelectorAll('.mouse');
 let timerElement = document.querySelector('.timer');
 let lastBin;
 let timeUp = false;
@@ -13,61 +14,99 @@ function randomTime(min, max) {
 }
 
 function randomBin(bins) {
-    let index = Math.floor(Math.random() * bins.length);
-    let bin = bins[index];
-    if (bin === lastBin) {
-      return randomBin(bins);
-    }
-    lastBin = bin;
-    return bin;
+  let index = Math.floor(Math.random() * bins.length);
+  let bin = bins[index];
+  if (bin === lastBin) {
+    return randomBin(bins);
+  }
+  lastBin = bin;
+  return bin;
+}
+
+function rise() {
+  let ratBin = randomBin(bins);
+  let mouseBin = randomBin(bins);
+// Check if the same bin is selected for rat and mouse, and choose call rise() if necessary
+  if (ratBin === mouseBin) {
+    return rise();
   }
 
-  function rise() {
-    let time = randomTime(200, 2000);
-    let bin = randomBin(bins);
-    bin.classList.add('up');
+  let rat = ratBin.querySelector('.rat');
+  let mouse = mouseBin.querySelector('.mouse');
+
+  // display rat from using animation by adding class 'up' 
+  ratBin.classList.add('up');
+  rat.style.display = 'block';
+//hide rat after random duration by removing class 'up'
+  setTimeout(() => {
+    ratBin.classList.remove('up');
+    rat.style.display = 'none';
+  }, randomTime(200, 2000));
+
+  setTimeout(() => { 
+    //After random time display mouse using animation  by adding class 'up
+    mouseBin.classList.add('up');
+    mouse.style.display = 'block';
+
     setTimeout(() => {
-      bin.classList.remove('up');
-      if (!timeUp) rise();
-    }, time);
+      //After rndom time remove mouse by removing class 'up'
+      mouseBin.classList.remove('up');
+      mouse.style.display = 'none';
+    }, randomTime(200, 2000));
+  }, randomTime(200, 2000));
+// if game not over , schedule for next rat or mouse
+  if (!timeUp) {
+    setTimeout(rise, randomTime(1000, 2000)); // Delay the next rat and mouse
   }
+}
 
-  function startTimer(duration) {
-    let time = duration;
-    countdown = setInterval(() => {
-      time--;
-      timerElement.textContent = time.toString();
-      if (time <= 0) {
-        clearInterval(countdown);
-        endGame();
-      }
-    }, 1000); // sets the countdown to to update and display the time every second
-  }
+rats.forEach(rat => {
+  rat.style.display = 'none'; // Hide rats initially
+});
+mice.forEach(mouse => {
+  mouse.style.display = 'none'; // Hide mice initially
+});
 
-  function startGame() {
-    scoreBoard.textContent = '0';
-    timeUp = false;
-    score = 0;
-    timerElement.textContent = '60'; // Reset the timer value to 60
-    peep();
-    startTimer(60); // Start  countdown with 60 seconds
-  }
 
-  function endGame() {
-    timeUp = true;
-    clearTimeout(timer);
-    clearInterval(countdown);
-    // Additional logic to be added like score result shown etc
-  }
 
-  function whack(e) {
-    if (!e.isTrusted) return;
+function startTimer(duration) {
+  let time = duration;
+  countdown = setInterval(() => {
+    time--;
+    timerElement.textContent = time.toString();
+    if (time <= 0) {
+      clearInterval(countdown);
+      endGame();
+    }
+  }, 1000);
+}
+
+function startGame() {
+  scoreBoard.textContent = '0';
+  timeUp = false;
+  score = 0;
+  timerElement.textContent = '60';
+  rise();
+  startTimer(60);
+}
+
+function endGame() {
+  timeUp = true;
+  clearTimeout(timer);
+  clearInterval(countdown);
+  // Additional logic to be added like score result shown, etc.
+}
+
+function whack(e) {
+  if (!e.isTrusted) return;
+  if (this.classList.contains('rat')) {
     score++;
-    this.parentNode.classList.remove('up');
-    scoreBoard.textContent = score.toString();
+  } else if (this.classList.contains('mouse')) {
+    score--;
   }
-  
-  rats.forEach(rat => rat.addEventListener('click', whack));
+  this.parentNode.classList.remove('up');
+  scoreBoard.textContent = score.toString();
+}
 
-
-//module.exports = { randomTime };
+rats.forEach(rat => rat.addEventListener('click', whack));
+mice.forEach(mouse => mouse.addEventListener('click', whack));
