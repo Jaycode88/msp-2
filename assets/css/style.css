@@ -1,10 +1,6 @@
-html {
-    box-sizing: border-box;
-    font-size: 10px;
-    background-color: #f3e6e8;
-    background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%);
-    }
-    
+   html {
+   
+   }
     *, *:before, *:after {
     box-sizing: inherit;
     }
@@ -14,6 +10,34 @@ html {
     margin: 0;
     font-family: sans-serif;
     }
+
+    /* Nav Bar */
+
+    .navbar {
+        background-color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      .logo img {
+        width: 80px;
+        height: 80px;
+      }
+      
+      .nav-links li {
+        display: inline;
+        margin-right: 15px;
+      }
+      
+      .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 30px;
+      }
+
+    /* Title & scoreboard area */
 
     .start{
     text-align: center;
@@ -39,6 +63,16 @@ html {
         color: rgb(104, 94, 114);
         margin-top: 0%;
         }
+
+button{
+            background: #ad00d7;
+            border: red;
+            font-size: 5rem;
+            cursor: pointer;
+            margin-bottom: 10px;
+            }
+
+/* gameArea and game play */
 
     .game {
     width: 800px;
@@ -93,13 +127,7 @@ html {
     top: 0;
     }
 
-    button{
-    background: #ad00d7;
-    border: red;
-    font-size: 5rem;
-    cursor: pointer;
-    margin-bottom: 10px;
-    }
+   /* Instructions */
     
     .instructions {
         position: relative; 
@@ -168,3 +196,19 @@ html {
           background-size: 35%; /* size of the rats */
         }
       }
+
+      /* Nav Bar Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      margin-top: 10px;
+    }
+  
+    .nav-links li {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
