@@ -1,214 +1,231 @@
-   html {
-   
-   }
-    *, *:before, *:after {
-    box-sizing: inherit;
-    }
+/* Body */
 
-    body {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    }
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
 
-    /* Nav Bar */
+/* Nav Bar */
 
-    .navbar {
-        background-color: #333;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-      }
-      
-      .logo img {
-        width: 80px;
-        height: 80px;
-      }
-      
-      .nav-links li {
-        display: inline;
-        margin-right: 15px;
-      }
-      
-      .nav-links li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 30px;
-      }
+.navbar {
+	background-color: #8cd61a;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
 
-    /* Title & scoreboard area */
+.logo img {
+	width: 80px;
+	height: 80px;
+}
 
-    .start{
-    text-align: center;
-    }
+.nav-links li {
+	display: inline;
+	margin-right: 15px;
+}
 
-    h1 {
-    text-align: center;
-    font-size: 5rem;
-    margin-bottom: 0;
-    }
+.nav-links li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+}
 
-    h2 {
-        text-align: center;
-        font-size: 3rem;
-        margin-bottom: 0;
-        }
+.nav-links li a:hover {
+	text-decoration: underline;
+}
 
-    .score {
-    color: rgb(104, 94, 114);
-    margin-top: 0%;
-    }
-    .timer {
-        color: rgb(104, 94, 114);
-        margin-top: 0%;
-        }
+/* Title & scoreboard area */
 
-button{
-            background: #ad00d7;
-            border: red;
-            font-size: 5rem;
-            cursor: pointer;
-            margin-bottom: 10px;
-            }
+.start {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	font-size: 5rem;
+	margin-bottom: 0;
+}
+
+h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 0;
+	text-decoration: underline;
+}
+
+.score {
+	color: rgb(247, 17, 17);
+	margin-top: 0%;
+}
+
+.timer {
+	color: rgb(247, 17, 17);
+	margin-top: 0%;
+}
+
+button {
+	background: #ad00d7;
+	border: red;
+	font-size: 5rem;
+	color: #8cd61a;
+	cursor: pointer;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
 
 /* gameArea and game play */
 
-    .game {
-    width: 800px;
-    height: 400px;
-    display: none;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    background-color: #d3ff8f;
-    }
+.game {
+	width: 800px;
+	height: 400px;
+	display: none;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	background-color: #d3ff8f;
+}
 
-    .bin {
-    flex: 1 0 33.33%;
-    overflow: hidden;
-    position: relative;
-    }
+.bin {
+	flex: 1 0 33.33%;
+	overflow: hidden;
+	position: relative;
+}
 
-    .bin:after {
-    display: block;
-    background: url("../images/bin.png") bottom center no-repeat;
-    background-size: contain;
-    content: '';
-    width: 100%;
-    height:70px;
-    position: absolute;
-    z-index: 2;
-    bottom: -30px;
-    }
+.bin:after {
+	display: block;
+	background: url("../images/bin.png") bottom center no-repeat;
+	background-size: contain;
+	content: '';
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	z-index: 2;
+	bottom: -30px;
+}
 
-    .mouse {
-        background: url("../images/mouse.png") bottom center no-repeat;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        height: 100%;
-        transition: all 0.4s ease;
-      }
+.mouse {
+	background: url("../images/mouse.png") bottom center no-repeat;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s ease;
+}
 
-      .bin.up .mouse {
-        top: 0;
-        }
+.bin.up .mouse {
+	top: 0;
+}
 
-    .rat {
-    background: url("../images/rat.png") bottom center no-repeat;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 100%;
-    transition:all 0.4s ease;
-    }
+.rat {
+	background: url("../images/rat.png") bottom center no-repeat;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s ease;
+}
 
-    .bin.up .rat {
-    top: 0;
-    }
+.bin.up .rat {
+	top: 0;
+}
 
-   /* Instructions */
-    
-    .instructions {
-        position: relative; 
-        font-size: 20px;
-        justify-content: center;
-        margin-left: 20%;
-        margin-right: 20%;
-      }
- 
- /*  media query for smaller screens */
+/* Instructions */
+
+.movedown-section {
+	position: relative;
+	font-size: 20px;
+	justify-content: center;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+#instructions {
+	background-color: #8cff90;
+}
+
+#about {
+	background-color: #b46eff;
+}
+
+/*  media query for smaller screens */
 
 @media screen and (max-width: 600px) {
-   
-    body {
-      font-size: 8px; 
-    }
-  
-    .game {
-        width: 100%; 
-        min-height: 400px; 
-        max-width: 600px; 
-        margin: 0 auto; /* Center the game area horizontally */
-        display: none; /* flexbox for responsive layout */
-        flex-wrap: wrap; 
-        justify-content: center; /* Center bins horizontally */
-        align-items: flex-start; /* Align  bins to top */
-    }
-  
-    .bin {
-        flex-basis: 33.3%; 
-        overflow: hidden; 
-        position: relative;
-        margin-bottom: 10px; 
-        height: 100px; 
-      }
-    }
-    .mouse {
-        background-size: 50%; /* size of mouse */
-        position: absolute; 
-        top: 100%;
-      }
-      
-      .rat {
-        background-size: 50%; /* size of the rats */
-        position: absolute; 
-        top: 100%;
-      }
 
-      @media screen and (min-width: 601px) {
-        .mouse {
-          background-size: 30%; /* size of the mice */
-        }
-        
-        .rat {
-          background-size: 30%; /* size of the rats */
-        }
-      }
+	body {
+		font-size: 8px;
+	}
 
-      @media screen and (min-width: 401px) and (max-width: 600px) {
-        .mouse {
-          background-size: 35%; /*  size of the mice */
-          
-        }
-        
-        .rat {
-          background-size: 35%; /* size of the rats */
-        }
-      }
+	.game {
+		width: 100%;
+		min-height: 400px;
+		max-width: 600px;
+		margin: 0 auto; /* Center the game area horizontally */
+		display: none;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		
+	}
 
-      /* Nav Bar Responsive Styles */
+	.bin {
+		flex-basis: 33.3%;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 10px;
+		height: 100px;
+	}
+}
+
+.mouse {
+	background-size: 50%; /* size of mouse */
+	position: absolute;
+	top: 100%;
+}
+
+.rat {
+	background-size: 50%; /* size of the rats */
+	position: absolute;
+	top: 100%;
+}
+
+@media screen and (min-width: 601px) {
+
+	.mouse {
+		background-size: 30%; /* size of the mice */
+	}
+
+	.rat {
+		background-size: 30%; /* size of the rats */	
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+
+	.mouse {
+		background-size: 35%; /*  size of the mice */	
+	}
+
+	.rat {
+		background-size: 35%; /* size of the rats */
+	}
+}
+
+/* Nav Bar Responsive Styles */
+
 @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-    }
-  
-    .nav-links {
-      margin-top: 10px;
-    }
-  
-    .nav-links li {
-      display: block;
-      margin-bottom: 5px;
-    }
-  }
+    
+	.navbar {
+		flex-direction: column;
+	}
+
+	.nav-links {
+		margin-top: 10px;
+	}
+
+	.nav-links li {
+		display: block;
+		margin-bottom: 5px;
+	}
+}
