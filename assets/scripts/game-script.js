@@ -35,6 +35,11 @@ function rise() {
     let rat = ratBin.querySelector('.rat');
     let mouse = mouseBin.querySelector('.mouse');
 
+    // Check if the selected bins already contain a rat or mouse, and call rise() again if necessary
+    if (rat.style.display === 'block' || mouse.style.display === 'block') {
+      return rise();
+  }
+
     // display rat from using animation by adding class 'up' 
     ratBin.classList.add('up');
     rat.style.display = 'block';
@@ -99,7 +104,8 @@ function endGame() {
     timeUp = true;
     clearTimeout(timer);
     clearInterval(countdown);
-    // Additional logic to be added like score result shown, etc.
+    //show alert with player score
+    alert("Game Over! Well done, you recieved " + score + " points. Try again to see if you can do better!")
 }
 
 function whack(e) {
