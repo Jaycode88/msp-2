@@ -178,6 +178,11 @@ button {
 	}
 }
 
+#instructions h2,
+  #about h2 {
+    font-size: 2.5rem;
+  }
+
 .mouse {
 	background-size: 50%; /* size of mouse */
 	position: absolute;
@@ -262,6 +267,13 @@ button {
 		background-size: 35%; /* size of the rats */
 	}
 }
+
+@media screen and (max-width: 400px) {
+    #instructions h2,
+    #about h2 {
+      font-size: 2rem;
+    }
+  }
 
 /* Nav Bar Responsive Styles */
 
