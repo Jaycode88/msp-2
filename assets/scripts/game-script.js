@@ -1,3 +1,4 @@
+let gameArea = document.querySelector('.game');
 let bins = document.querySelectorAll('.bin');
 let scoreBoard = document.querySelector('.score');
 let rats = document.querySelectorAll('.rat');
@@ -82,12 +83,16 @@ function startTimer(duration) {
 }
 
 function startGame() {
+  gameArea.style.display = 'flex';
   scoreBoard.textContent = '0';
   timeUp = false;
   score = 0;
   timerElement.textContent = '60';
+  // Give 1 second delay for game area to appear before rise() and startTimer are called
+  setTimeout(() => {
   rise();
   startTimer(60);
+},1000);
 }
 
 function endGame() {
