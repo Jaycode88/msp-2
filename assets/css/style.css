@@ -130,7 +130,7 @@ button {
 	top: 0;
 }
 
-/* Instructions */
+/* Movedown section */
 
 .movedown-section {
 	position: relative;
@@ -149,10 +149,9 @@ button {
 	background-color: #b46eff;
 }
 
-/*  media query for smaller screens */
+/* Media quries */
 
 @media screen and (max-width: 600px) {
-
 	body {
 		font-size: 8px;
 	}
@@ -161,12 +160,11 @@ button {
 		width: 100%;
 		min-height: 400px;
 		max-width: 600px;
-		margin: 0 auto; /* Center the game area horizontally */
+		margin: 0 auto;
 		display: none;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: flex-start;
-		
 	}
 
 	.bin {
@@ -176,109 +174,37 @@ button {
 		margin-bottom: 10px;
 		height: 100px;
 	}
+
+	.mouse,
+	.rat {
+		background-size: 50%;
+		position: absolute;
+		top: 100%;
+	}
 }
 
-#instructions h2,
-  #about h2 {
-    font-size: 2.5rem;
-  }
-
-.mouse {
-	background-size: 50%; /* size of mouse */
-	position: absolute;
-	top: 100%;
+@media (min-width: 401px) and (max-width: 600px) {
+	.mouse,
+	.rat {
+		background-size: 35%;
+	}
 }
-
-.rat {
-	background-size: 50%; /* size of the rats */
-	position: absolute;
-	top: 100%;
-}
-
-/* Footer bar */
-.footer {
-    background-color: #ffffff;
-    padding: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  .footer-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .footer-column {
-    flex: 1;
-  }
-  
-  .footer-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-list li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-social-icons {
-    display: flex;
-  }
-  
-  .footer-social-icons a {
-    margin-right: 10px;
-  }
-  
-  .footer-social-icons {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-  }
-  
-  /* Adjust footer height */
-  @media (min-width: 576px) {
-    .footer {
-      height: 70px;
-    }
-  }
-  
-  
 
 @media screen and (min-width: 601px) {
-
-	.mouse {
-		background-size: 30%; /* size of the mice */
-	}
-
+	.mouse,
 	.rat {
-		background-size: 30%; /* size of the rats */	
-	}
-}
-
-@media screen and (min-width: 401px) and (max-width: 600px) {
-
-	.mouse {
-		background-size: 35%; /*  size of the mice */	
-	}
-
-	.rat {
-		background-size: 35%; /* size of the rats */
+		background-size: 30%;
 	}
 }
 
 @media screen and (max-width: 400px) {
-    #instructions h2,
-    #about h2 {
-      font-size: 2rem;
-    }
-  }
-
-/* Nav Bar Responsive Styles */
+	#instructions h2,
+	#about h2 {
+		font-size: 2rem;
+	}
+}
 
 @media (max-width: 768px) {
-
 	.navbar {
 		flex-direction: column;
 	}
@@ -290,5 +216,46 @@ button {
 	.nav-links li {
 		display: block;
 		margin-bottom: 5px;
+	}
+}
+
+/* Footer bar */
+.footer {
+	background-color: #ffffff;
+	padding: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.footer-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-column {
+	flex: 1;
+}
+
+.footer-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-list li {
+	margin-bottom: 10px;
+}
+
+.footer-social-icons {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+}
+
+/* Adjust footer height */
+@media (min-width: 576px) {
+	.footer {
+		height: 70px;
 	}
 }
