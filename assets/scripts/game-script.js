@@ -1,3 +1,4 @@
+// N.b some sourcecode from Divya M C m at medium.com and adapted
 let gameArea = document.querySelector('.game');
 let bins = document.querySelectorAll('.bin');
 let scoreBoard = document.querySelector('.score');
