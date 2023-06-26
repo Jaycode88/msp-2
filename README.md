@@ -47,6 +47,7 @@ The central audience to the game will be all ages looking for an engaging distra
 - As a new site user, I would like to feel challenged, so that I can improve my reaction time and hand-eye cooordination skills.
 - As a new site user, I would like to play a simple yet challenging game, so that I can De-stress or fill a gap in time.
 - As a new site user, I would like to feel engaged , so that I can forget whats on my mind and enjoy time out.
+- As a new site user, I would like to be able to navigate with ease, so that I can easily find what I am looking for.
 
 
 ### Returning Site Users
@@ -81,67 +82,67 @@ I used [Figma](https://www.figma.com/) to create high fidelity prototypes for mo
 
 
 ## Features
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+The website is styled as one page with three sections, The first Is the Title, Scoreboard and game play area which appears when the "Play!" button is pressed. The second section displays the game play instructions which appears directly under the "Play!" button until the game is started. The third section consist of an "About" section which gives details of game play and design.
 
 ### Existing Features
 
-- **Title for feature #1**
+- **Navigation Bar**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The website includes a navigation bar at the top, Which allows users to easily navigate between different sections of the site.
+    - The navigation bar includes a log and links to the Home, Instructions and About Sections.
+    - The navigation bar is responsive to different screen sizes
+![screenshot](assets/images/navbardesk.png)
+![screenshot](assets/images/navbarmob.png)
 
-![screenshot](documentation/feature01.png)
+- **Title, Scoreboard and Play Button**
 
-- **Title for feature #2**
+    - The website displays "Whack-A-Rat" as the main heading
+    - A scoreboard shows the current score, Which is initially set to 0.
+    - A timer indicates the time left in the game, Starting from 60 seconds.
+    - A "Play!" button allows the user to start the game, Upon the user clicking the "Play!" button the game play area appears.
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+![screenshot](assets/images/scoreboard.png)
 
-![screenshot](documentation/feature02.png)
+- **Game Area**
 
-- **Title for feature #3**
+    - The Game area is a 3x3 grid of compost bins.
+    - Rats and mice randomly appear from the bins.
+    -Rats are worth points, and mice deduct points if accidentally clicked.
+    - Rats and mice appear and disappear with animation.
+    - The Game area is initially hidden and only displayed when the "Play!" button is clicked. 
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+![screenshot](assets/images/gamearea.png)
 
-![screenshot](documentation/feature03.png)
+- **Instructions and About Sections**
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+    - The website includes an "Instructions" Section that provides an overview of the game rules and how to play.
+    - The "About Whack-A-Rat" section gives information about the game, its development and the technologies used.
+    - Both sections provide detailed descriptions to inform and engage users.
 
-Repeat as necessary for as many features as your site contains.
+    ![screenshot](assets/images/dropdownsection.png)
 
-Hint: the more, the merrier!
+- **Footer**
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+    - The website has a footer section displayed at the bottom.
+    - The footer includes the game name and contact information.
+    - Social media links are provided for users to connect with the game's social profiles.
+
+    ![screenshot](assets/images/footer.png)
+
+- **Responsive Design**
+
+    - The website is designed to be responsive, adapting to different screen sizes and devices.
+    - Media queries are used to adjust the layout and font size for different screen widths.
+    - The game area and navigation bar are optimised for mobile screens.
 
 ### Future Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Local Storage Scoreboard
+    - I would like to add local storage, so a user can see there previous high score when they return to the site.
+- Leaderboard page
+    - I believe a great addition would be a LeaderBoard page which displays the names and scores of the top 25 scorers of all time.
+- Additional Levels
+    - I think it would increase user engagment, If more levels were added to the game. eg. the animals appear for less time in level 2.
 
 ## Tools & Technologies Used
 
