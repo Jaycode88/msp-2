@@ -89,7 +89,7 @@ The website is styled as one page with three sections, The first Is the Title, S
 - **Navigation Bar**
 
     - The website includes a navigation bar at the top, Which allows users to easily navigate between different sections of the site.
-    - The navigation bar includes a log and links to the Home, Instructions and About Sections.
+    - The navigation bar includes a logo and links to the Home, Instructions and About Sections.
     - The navigation bar is responsive to different screen sizes
 ![screenshot](assets/images/navbardesk.png)
 ![screenshot](assets/images/navbarmob.png)
@@ -107,7 +107,7 @@ The website is styled as one page with three sections, The first Is the Title, S
 
     - The Game area is a 3x3 grid of compost bins.
     - Rats and mice randomly appear from the bins.
-    -Rats are worth points, and mice deduct points if accidentally clicked.
+    - Rats are worth points, and mice deduct points if accidentally clicked.
     - Rats and mice appear and disappear with animation.
     - The Game area is initially hidden and only displayed when the "Play!" button is clicked. 
 
@@ -143,42 +143,31 @@ The website is styled as one page with three sections, The first Is the Title, S
     - I believe a great addition would be a LeaderBoard page which displays the names and scores of the top 25 scorers of all time.
 - Additional Levels
     - I think it would increase user engagment, If more levels were added to the game. eg. the animals appear for less time in level 2.
+- Footer Bar links and information
+    - The social media links and contact information needs to be updated with correct information once social media pages built.    
 
 ## Tools & Technologies Used
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
 - [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
 - [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
-- [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
-- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
-- [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
-- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
-- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
-- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
-- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
-- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
-
+- [Canva](https://www.canva.com/) used for logo creation and image stock.
+- [Figma](https://www.figma.com/) used for wireframes and high fidelity prototypes.
+- [Gimp](https://www.gimp.org/) used for image manipulation(Resizing,converting file type etc.)
+- [Adobe colour wheel](https://color.adobe.com/) used for selecting colour scheme.
+- [Lorem Ipsum](https://loremipsum.io/) used for placeholder text in the earlier design stages.
+- [Am I Responsive](https://ui.dev/amiresponsive) used to Create visuals for responsive design.
+- [Chat GPT](https://chat.openai.com/) Used for trouble shooting.
+- [Copy Ai](https://app.copy.ai/) Used to create text content.
+- [W3 HTML Validator](https://validator.w3.org/) used to validate HTML.
+- [W3 Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) used to validate CSS.
+- [AY11 Color contrast](https://color.a11y.com/Contrast/) Used to validate colour contrast.
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
