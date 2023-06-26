@@ -39,79 +39,46 @@ By using a sans-serif font, I was able to ensure that all text in the game was c
 I believe that the typography of Whack-a-Rat is an important aspect of the game's design, as it ensures that all users are able to easily read and understand the instructions and scoring system.
 
 ## User Stories
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, list all of your user stories for the project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+The central audience to the game will be all ages looking for an engaging distraction for many reasons including, Stress relief, Challenging entertainment and General fun in down time.
 
 ### New Site Users
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a new site user, I would like to be able to read an understand the rules of gameplay, so that I can get engaged with the game effectively.
+- As a new site user, I would like to feel challenged, so that I can improve my reaction time and hand-eye cooordination skills.
+- As a new site user, I would like to play a simple yet challenging game, so that I can De-stress or fill a gap in time.
+- As a new site user, I would like to feel engaged , so that I can forget whats on my mind and enjoy time out.
+
 
 ### Returning Site Users
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+- As a returning site user, I would like to challenge myself, so that I can beat my previous highest score.
+- As a returning site user, I would like to compare my score with freinds or fammily, so that I can create fun competition.
+- As a returning site user, I would like to be familiar with gameplay, so that I can play again without a change in rules.
 
 ### Site Admin
 
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I should have the ability to manage the game itself, so that I can adjust game settings where needed.
+- As a site administrator, I should be able to customise the game, so that I can modify visual elements or add new features.
 
 ## Wireframes
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+I've used [Figma](https://www.figma.com/) to design my site wireframes.
 
-### Home Page Wireframes
-
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-home.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-home.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
-
-### About Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-about.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-about.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-about.png) |
+| Mobile | ![screenshot](assets/images/wireframemobile.png) |
+| Tablet | ![screenshot](assets/images/wireframetablet.png) |
+| Desktop | ![screenshot](assets/images/wireframedesktop.png) |
 
-### Contact Page Wireframes
-
+## High Fidelity Prototype
+I used [Figma](https://www.figma.com/) to create high fidelity prototypes for mobile, tablet and desktop devices.
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Mobile | ![screenshot](assets/images/highfidmobile.png) |
+| Tablet | ![screenshot](assets/images/highfidtablet.png) |
+| Desktop | ![screenshot](assets/images/highfiddesktop.png) |
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Repeat for any addition wireframe pages you have.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Features
 
