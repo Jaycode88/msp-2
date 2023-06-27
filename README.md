@@ -132,7 +132,7 @@ The website is styled as one page with three sections, The first Is the Title, S
 - **End of game alert**
 
     - When the game has finished, An Alert is displayed that informs the user that the game has ended and provides them with their score.
-    - The alert text also uses text to intise the user to play again. 
+    - The alert also uses text to entice the user to play again. 
 
     ![screenshot](assets/images/alert.png)
 
@@ -235,13 +235,12 @@ All worded content was first wrote by myself then edited and improved with sugge
 
 This project includes code that was adapted from a tutorial by [Divya M C M](https://medium.com/@divyamcm/whack-a-mole-game-using-html-css-and-javascript-84b108ec5c8e) available at [medium](https://medium.com/). The tutorial provided valuable guidance and served as a foundation for the development of this project.
 
-I found This [Javascript 30 day challenge](https://javascript30.com/) by [Wesbos](https://wesbos.com/) of immense help not only with practising Javascript before starting this project, but also I owe many thanks to the last(30th) challenge on the course, This is a whack-a-mole tutorial which really helped with planning and testing my javascript through the building stage. N.B I can only link to the Challenge home page not directly to the 30th challenge due to sign in needed. 
+I found This [Javascript 30 day challenge](https://javascript30.com/) by [Wesbos](https://wesbos.com/) of immense help not only with practising Javascript before starting this project, but also I owe many thanks to the last(30th) challenge on the course, This is a whack-a-mole tutorial which really helped with planning and testing my javascript through the building stage. N.B I can only link to the Challenge home page not directly to the 30th challenge due to sign up needed. 
 
 ### Media
 All images: Rat, Mouse and Compost Bin were provided by [Canva](https://www.canva.com/)
 
 ### Acknowledgements
-
 
 - I would like to thank my Code Institute mentor, [Alex K](https://calendly.com/alex_mentor) for their support throughout the development of this project.
 - I would like to thank Tim Nelson for his ongoing support.

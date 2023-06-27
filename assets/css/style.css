@@ -66,6 +66,7 @@ h2 {
 }
 
 button {
+	box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.5);
 	background: #ad00d7;
 	border: red;
 	font-size: 5rem;
