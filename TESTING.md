@@ -84,10 +84,22 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 |           | Gameplay  | Y             |
 |           | Alert     | Y             |
 |           | Scoreboard| Y             |
-|Tablet     |Index      | Y             |
+|Tablet     | Index     | Y             |
 |           | Gameplay  | Y             |
 |           | Alert     | Y             |
 |           | Scoreboard| Y             |
+
+### Desktop
+
+![screenshot](assets/images/desktop.png)
+
+![screenshot](assets/images/desktopalert.png)
+
+### Tablet
+
+
+
+
 
 ## Lighthouse Audit
 

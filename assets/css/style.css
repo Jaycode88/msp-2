@@ -279,18 +279,19 @@ button {
 
 /* Nav Bar Responsive Styles */
 
-@media (max-width: 768px) {
+@media (max-width: 795px) {
 
 	.navbar {
-		flex-direction: column;
+		flex-wrap: wrap;
 	}
 
 	.nav-links {
+		flex: 1;
 		margin-top: 10px;
 	}
 
 	.nav-links li {
 		display: block;
-		margin-bottom: 5px;
+		margin-bottom: 0 5px;
 	}
 }
