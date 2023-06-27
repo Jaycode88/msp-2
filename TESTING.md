@@ -25,7 +25,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 ### JavaScript
 
-I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+I have used the recommended [JShint Validator](https://jshint.com) to validate my JS file.
 
 ![screenshot](assets/images/jsvalid.png)
 
@@ -103,9 +103,9 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 ### Mobile
 
-![screenshot](assets/images/mobile.png)
+![screenshot](assets/images/mobile.jpg)
 
-![screenshot](assets/images/mobilealert.png)
+![screenshot](assets/images/mobilealert.jpg)
 
 ## Lighthouse Audit
 
