@@ -106,7 +106,7 @@ function endGame() {
     clearTimeout(timer);
     clearInterval(countdown);
     //show alert with player score
-    alert("Game Over! Well done, you recieved " + score + " points. Try again to see if you can do better!")
+    alert("Game Over! Well done, you recieved " + score + " points. Try again to see if you can do better!");
 }
 
 function whack(e) {
