@@ -42,61 +42,52 @@ I have tested my deployed project with the following web browsers to check for c
 
 | Browser | Page/Function | Expected Look | Expected Behaviour |
 |---------|---------------|---------------|--------------------|
-|  Chrome |   Index       |        Y      |          Y         |
+|  Chrome |  Index        |        Y      |          Y         |
 |         |  Game play    |        Y      |          Y         |
-|         |    Alert      |        Y      |          Y         |
-|         |   Scoreboard  |        Y      |          Y         |
-| Firefox |   Index       |        Y      |          Y         |
+|         |  Alert        |        Y      |          Y         |
+|         |  Scoreboard   |        Y      |          Y         |
+| Firefox |  Index        |        Y      |          Y         |
 |         |  Game play    |        Y      |          Y         |
-|         |    Alert      |        Y      |          Y         |
-|         |   Scoreboard  |        Y      |          Y         |
-|  Edge   |   Index       |        Y      |          Y         |
+|         |  Alert        |        Y      |          Y         |
+|         |  Scoreboard   |        Y      |          Y         |
+|  Edge   |  Index        |        Y      |          Y         |
 |         |  Game play    |        Y      |          Y         |
-|         |    Alert      |        Y      |          Y         |
-|         |   Scoreboard  |        Y      |          Y         |
-|  Opera  |   Index       |        Y      |          Y         |
+|         |  Alert        |        Y      |          Y         |
+|         |  Scoreboard   |        Y      |          Y         |
+|  Opera  |  Index        |        Y      |          Y         |
 |         |  Gameplay     |        Y      |          Y         |
-|         |    Alert      |        Y      |          Y         |
-|         |   Scoreboard  |        Y      |          Y         |
+|         |  Alert        |        Y      |          Y         |
+|         |  Scoreboard   |        Y      |          Y         |
 
 
 ![screenshot](assets/images/browsertest.png)
 
 ## Responsiveness
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+I've tested my deployed project on multiple devices to check for responsiveness issues. 
 
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I've tested my deployed project on multiple devices to check for responsiveness issues.
-
-| Device | Screenshot | Notes |
-| --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsive-mobile.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsive-desktop.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsive-xl.png) | Scaling starts to have minor issues |
-| 4K Monitor | ![screenshot](documentation/responsive-4k.png) | Noticeable scaling issues |
-| Google Pixel 7 Pro | ![screenshot](documentation/responsive-pixel.png) | Works as expected |
-| iPhone 14 | ![screenshot](documentation/responsive-iphone.png) | Works as expected |
-| x | x | repeat for any other tested sizes |
+| Device    | Page/Area | Expected Look |
+|-----------|-----------|---------------|
+|Desktop 22"| Index     | Y             |
+|           | Gameplay  | Y             |
+|           | Alert     | Y             |
+|           | Scoreboard| Y             |
+|Laptop 16" | Index     | Y             |
+|           | Gameplay  | Y             |
+|           | Alert     | Y             |
+|           | Scoreboard| Y             |
+| Iphone 13 | Index     | Y             |
+|           | Gameplay  | Y             |
+|           | Alert     | Y             |
+|           | Scoreboard| Y             |
+|Galaxy S20 | Index     | Y             |
+|           | Gameplay  | Y             |
+|           | Alert     | Y             |
+|           | Scoreboard| Y             |
+|Tablet     |Index      | Y             |
+|           | Gameplay  | Y             |
+|           | Alert     | Y             |
+|           | Scoreboard| Y             |
 
 ## Lighthouse Audit
 
