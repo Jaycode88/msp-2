@@ -25,17 +25,25 @@ function randomBin(bins) {
     return bin;
 }
 
+// Check for animal already in bin
+function checkCollision(bin) {
+    if (
+      bin.querySelector('.rat').classList.contains('up') ||
+      bin.querySelector('.mouse').classList.contains('up')
+    ) {
+      return true; // Collision detected
+    }
+    return false; // No collision
+  }
+
 function rise() {
     let ratBin = randomBin(bins);
     let mouseBin = randomBin(bins);
-    // Check if the same bin is selected for rat and mouse, and choose call rise() if necessary
-    if (ratBin === mouseBin) {
-        
-        return rise();
-    } 
-
-    // Check if the selected bins already contain a rat or mouse, and call rise() again if necessary
-    
+    // Check if the same bin is selected for rat and mouse, and call rise() if necessary
+    if (ratBin === mouseBin || checkCollision(ratBin) || checkCollision(mouseBin)) {
+        return rise(); // Collision detected or same bin selected, choose new bins
+      }
+     
 
     // display rat from using animation by adding class 'up' 
     ratBin.querySelector('.rat').classList.add('up');
@@ -90,6 +98,7 @@ function endGame() {
     timeUp = true;
     clearTimeout(timer);
     clearInterval(countdown);
+    gameArea.style.display = 'none';
     //show alert with player score
     alert("Game Over! Well done, you recieved " + score + " points. Try again to see if you can do better!");
 }
