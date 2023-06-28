@@ -118,3 +118,12 @@ function whack(e) {
 startButton.addEventListener('click', startGame);
 rats.forEach(rat => rat.addEventListener('click', whack));
 mice.forEach(mouse => mouse.addEventListener('click', whack));
+
+//module.exports = {
+//  startButton,
+//  scoreBoard,
+//  timerElement,
+//  timeUp,
+//  score,
+//  randomTime
+//};
