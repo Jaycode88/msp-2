@@ -232,6 +232,17 @@ button.play {
 
 /*  media queries */
 
+@media (min-width: 851px) {
+	.rat {
+    background-size: 30%; 
+	transform: translateX(10px);
+  }
+
+  .mouse {
+    background-size: 30%; 
+  }
+}
+
 @media (max-width: 850px) {
 
 	body {
@@ -257,10 +268,23 @@ button.play {
 		height: 100px;
 	}
 
+	.frog {
+		background-size: 30%; 
+	}
+
+	.rat {
+		background-size: 40%;
+	  }
+	
+	  .mouse {
+		background-size: 40%;
+	  }
+	}
+
 	#instructions {
 		margin-top: 20px;
 	}
-}
+
 
 /* Adjust footer height */
 
@@ -271,7 +295,7 @@ button.play {
     }
   }
 
-@media (min-width: 601px) {
+@media (min-width: 601px) and (max-width:850px) {
 	
 	.mouse {
 		background-size: 30%; /* size of the mice */
@@ -281,6 +305,9 @@ button.play {
 		background-size: 30%; /* size of the rats */
 		transform: translateX(10px);	
 	}
+	.frog {
+		background-size: 20%;
+	  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
@@ -292,6 +319,9 @@ button.play {
 	.rat {
 		background-size: 35%; /* size of the rats */
 	}
+	.frog {
+		background-size: 30%;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -300,7 +330,18 @@ button.play {
     #about h2 {
       font-size: 2rem;
     }
+	.mouse {
+		background-size: 50%; /*  size of the mice */	
+	}
+
+	.rat {
+		background-size: 50%; /* size of the rats */
+	}
+	.frog {
+		background-size: 40%;
+	}
   }
+
 
 /* Nav Bar Responsive Styles */
 
