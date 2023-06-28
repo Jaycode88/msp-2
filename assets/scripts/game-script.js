@@ -33,7 +33,8 @@ function randomBin(bins) {
 function checkCollision(bin) {
     if (
       bin.querySelector('.rat').classList.contains('up') ||
-      bin.querySelector('.mouse').classList.contains('up')
+      bin.querySelector('.mouse').classList.contains('up') ||
+      bin.querySelector('.frog').classList.contains('up')
     ) {
       return true; // Collision detected
     }
