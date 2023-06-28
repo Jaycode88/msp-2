@@ -1,4 +1,7 @@
 /* Body */
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	padding: 0;
@@ -6,9 +9,6 @@ body {
 	font-family: sans-serif;
 }
 
-html {
-	scroll-behavior: smooth;
-}
 /* Nav Bar */
 
 .navbar {
@@ -88,6 +88,7 @@ button.play {
 	flex-wrap: wrap;
 	margin: 0 auto;
 	background-color: #d3ff8f;
+	margin-bottom: 3rem;
 }
 
 .bin {
@@ -147,10 +148,14 @@ button.play {
 
 #instructions {
 	background-color: #8cff90;
+	padding: 2rem;
+	margin-bottom: 3rem;
 }
 
 #about {
 	background-color: #b46eff;
+	padding: 2rem;
+	margin-bottom: 3rem;
 }
 #instructions h2,
   #about h2 {
