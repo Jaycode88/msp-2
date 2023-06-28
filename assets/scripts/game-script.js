@@ -30,50 +30,35 @@ function rise() {
     let mouseBin = randomBin(bins);
     // Check if the same bin is selected for rat and mouse, and choose call rise() if necessary
     if (ratBin === mouseBin) {
+        
         return rise();
-    }
-
-    let rat = ratBin.querySelector('.rat');
-    let mouse = mouseBin.querySelector('.mouse');
+    } 
 
     // Check if the selected bins already contain a rat or mouse, and call rise() again if necessary
-    if (rat.style.display === 'block' || mouse.style.display === 'block') {
-      return rise();
-  }
+    
 
     // display rat from using animation by adding class 'up' 
-    ratBin.classList.add('up');
-    rat.style.display = 'block';
+    ratBin.querySelector('.rat').classList.add('up');
     //hide rat after random duration by removing class 'up'
     setTimeout(() => {
-        ratBin.classList.remove('up');
-        rat.style.display = 'none';
-    }, randomTime(200, 2000));
+        ratBin.querySelector('.rat').classList.remove('up');
+        // rat.style.display = 'none';
+    }, randomTime(1000, 4000));
 
     setTimeout(() => {
         //After random time display mouse using animation  by adding class 'up
-        mouseBin.classList.add('up');
-        mouse.style.display = 'block';
+        mouseBin.querySelector('.mouse').classList.add('up');
 
         setTimeout(() => {
             //After rndom time remove mouse by removing class 'up'
-            mouseBin.classList.remove('up');
-            mouse.style.display = 'none';
-        }, randomTime(200, 2000));
-    }, randomTime(200, 2000));
+            mouseBin.querySelector('.mouse').classList.remove('up');
+        }, randomTime(500, 5000));
+    }, randomTime(500, 5000));
     // if game not over , schedule for next rat or mouse
     if (!timeUp) {
         setTimeout(rise, randomTime(1000, 2000)); // Delay the next rat and mouse
     }
 }
-
-rats.forEach(rat => {
-    rat.style.display = 'none'; // Hide rats initially
-});
-mice.forEach(mouse => {
-    mouse.style.display = 'none'; // Hide mice initially
-});
-
 
 
 function startTimer(duration) {
@@ -116,7 +101,7 @@ function whack(e) {
     } else if (this.classList.contains('mouse')) {
         score--;
     }
-    this.parentNode.classList.remove('up');
+    this.classList.remove('up');
     scoreBoard.textContent = score.toString();
 }
 
