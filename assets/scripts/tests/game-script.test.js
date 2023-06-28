@@ -1,6 +1,7 @@
 /**
  * @jest-environment jsdom
  */
+
 const { JSDOM } = require("jsdom");
 jest.mock('../game-script');
 
@@ -10,7 +11,8 @@ const {
   timerElement,
   timeUp,
   score,
-  randomTime
+  randomTime,
+  bins,
 } = require("../game-script.js")
 
 

@@ -55,7 +55,7 @@ function checkCollision(bin) {
         setTimeout(() => {
             frogBin.querySelector('.frog').classList.remove('up');
         }, randomTime(1000, 4000));
-    }, randomTime(20000, 30000)); // Adjust the range for the delay before each frog appearance
+    }, randomTime(20000, 30000)); // Adjust delay before each frog appearance
 
 
     frogCount++;
@@ -77,10 +77,8 @@ function rise() {
 
     // display rat from using animation by adding class 'up' 
     ratBin.querySelector('.rat').classList.add('up');
-    //hide rat after random duration by removing class 'up'
     setTimeout(() => {
         ratBin.querySelector('.rat').classList.remove('up');
-        // rat.style.display = 'none';
     }, randomTime(1000, 4000));
 
     setTimeout(() => {

@@ -164,27 +164,31 @@ button.play {
 	padding: 2rem;
 	margin-bottom: 3rem;
 }
+
 #instructions h2,
-  #about h2 {
-    font-size: 2.5rem;
+#about h2 {
+	font-size: 2.5rem;
 	text-decoration: underline;
 	text-align: center;
-  }
+}
 
 .mouse {
-	background-size: 50%; /* size of mouse */
+	background-size: 50%;
+	/* size of mouse */
 	position: absolute;
 	top: 100%;
 }
 
 .rat {
-	background-size: 50%; /* size of the rats */
+	background-size: 50%;
+	/* size of the rats */
 	position: absolute;
 	top: 100%;
 }
 
 .frog {
-	background-size: 20%; /* size of frog */
+	background-size: 20%;
+	/* size of frog */
 	position: absolute;
 	top: 100%;
 }
@@ -192,71 +196,73 @@ button.play {
 /* Footer bar */
 
 .footer {
-    background-color: #ffffff;
-    padding: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  .footer-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .footer-column {
-    flex: 1;
-  }
-  
-  .footer-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-list li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-social-icons {
-    display: flex;
-  }
-  
-  .footer-social-icons a {
-    margin-right: 10px;
-  }
-  
-  .footer-social-icons {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-  }
-
-  /* 404 error page */
-  .error {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
+	background-color: #ffffff;
+	padding: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
-.error h2, .error p, .error button {
-    margin-top: 0; 
+.footer-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-column {
+	flex: 1;
+}
+
+.footer-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-list li {
+	margin-bottom: 10px;
+}
+
+.footer-social-icons {
+	display: flex;
+}
+
+.footer-social-icons a {
+	margin-right: 10px;
+}
+
+.footer-social-icons {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+}
+
+/* 404 error page */
+.error {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+}
+
+.error h2,
+.error p,
+.error button {
+	margin-top: 0;
 }
 
 /*  media queries */
 
 @media (min-width: 851px) {
 	.rat {
-    background-size: 30%; 
-	transform: translateX(10px);
-  }
+		background-size: 30%;
+		transform: translateX(10px);
+	}
 
-  .mouse {
-    background-size: 30%; 
-  }
+	.mouse {
+		background-size: 30%;
+	}
 }
 
 @media (max-width: 850px) {
@@ -269,11 +275,12 @@ button.play {
 		width: 100%;
 		min-height: 400px;
 		max-width: 600px;
-		margin: 0 auto; /* Center the game area horizontally */
+		margin: 0 auto;
+		/* Center the game area horizontally */
 		display: none;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-items: flex-start;	
+		align-items: flex-start;
 	}
 
 	.bin {
@@ -285,78 +292,88 @@ button.play {
 	}
 
 	.frog {
-		background-size: 30%; 
+		background-size: 30%;
 	}
 
 	.rat {
 		background-size: 40%;
-	  }
-	
-	  .mouse {
-		background-size: 40%;
-	  }
 	}
 
-	#instructions {
-		margin-top: 20px;
+	.mouse {
+		background-size: 40%;
 	}
+}
+
+#instructions {
+	margin-top: 20px;
+}
 
 
 /* Adjust footer height */
 
-  @media (min-width: 576px) {
-    
+@media (min-width: 576px) {
+
 	.footer {
-      height: 70px;
-    }
-  }
+		height: 70px;
+	}
+}
 
 @media (min-width: 601px) and (max-width:850px) {
-	
+
 	.mouse {
-		background-size: 30%; /* size of the mice */
+		background-size: 30%;
+		/* size of the mice */
 	}
 
 	.rat {
-		background-size: 30%; /* size of the rats */
-		transform: translateX(10px);	
+		background-size: 30%;
+		/* size of the rats */
+		transform: translateX(10px);
 	}
+
 	.frog {
 		background-size: 20%;
-	  }
+	}
 }
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
 
 	.mouse {
-		background-size: 35%; /*  size of the mice */	
+		background-size: 35%;
+		/*  size of the mice */
 	}
 
 	.rat {
-		background-size: 35%; /* size of the rats */
+		background-size: 35%;
+		/* size of the rats */
 	}
+
 	.frog {
 		background-size: 30%;
 	}
 }
 
 @media screen and (max-width: 400px) {
-    
+
 	#instructions h2,
-    #about h2 {
-      font-size: 2rem;
-    }
+	#about h2 {
+		font-size: 2rem;
+	}
+
 	.mouse {
-		background-size: 50%; /*  size of the mice */	
+		background-size: 50%;
+		/*  size of the mice */
 	}
 
 	.rat {
-		background-size: 50%; /* size of the rats */
+		background-size: 50%;
+		/* size of the rats */
 	}
+
 	.frog {
 		background-size: 40%;
 	}
-  }
+}
 
 
 /* Nav Bar Responsive Styles */
