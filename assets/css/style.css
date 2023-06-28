@@ -167,6 +167,8 @@ button.play {
 #instructions h2,
   #about h2 {
     font-size: 2.5rem;
+	text-decoration: underline;
+	text-align: center;
   }
 
 .mouse {
