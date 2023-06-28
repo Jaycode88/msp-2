@@ -5,12 +5,15 @@ let bins = document.querySelectorAll('.bin');
 let scoreBoard = document.querySelector('.score');
 let rats = document.querySelectorAll('.rat');
 let mice = document.querySelectorAll('.mouse');
+let frogs = document.querySelectorAll('.frog');
 let timerElement = document.querySelector('.timer');
 let lastBin;
 let timeUp = false;
 let score = 0;
 let timer;
 let countdown;
+let frogCount = 0;
+let maxFrogCount = 2;
 
 function randomTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
@@ -36,6 +39,32 @@ function checkCollision(bin) {
     }
     return false; // No collision
   }
+
+  function riseFrog() {
+    if (frogCount >= maxFrogCount) {
+        return; // Limit reached, stop appearing frogs
+    }
+
+    let frogBin = randomBin(bins);
+    if (checkCollision(frogBin)) {
+        return riseFrog();
+    }
+
+    setTimeout(() => {
+        frogBin.querySelector('.frog').classList.add('up');
+        setTimeout(() => {
+            frogBin.querySelector('.frog').classList.remove('up');
+        }, randomTime(1000, 4000));
+    }, randomTime(20000, 30000)); // Adjust the range for the delay before each frog appearance
+
+
+    frogCount++;
+
+    if (!timeUp) {
+        setTimeout(riseFrog, randomTime(1000, 2000));
+    }
+}
+
 
 function rise() {
     let ratBin = randomBin(bins);
@@ -88,9 +117,11 @@ function startGame() {
     timeUp = false;
     score = 0;
     timerElement.textContent = '60';
+    frogCount = 0;
     // Give 1 second delay for game area to appear before rise() and startTimer are called
     setTimeout(() => {
         rise();
+        riseFrog();
         startTimer(60);
     }, 1000);
 }
@@ -110,7 +141,10 @@ function whack(e) {
         score++;
     } else if (this.classList.contains('mouse')) {
         score--;
+    }else if (this.classList.contains('frog')) {
+        score += 10;
     }
+
     this.classList.remove('up');
     scoreBoard.textContent = score.toString();
 }
@@ -118,6 +152,7 @@ function whack(e) {
 startButton.addEventListener('click', startGame);
 rats.forEach(rat => rat.addEventListener('click', whack));
 mice.forEach(mouse => mouse.addEventListener('click', whack));
+frogs.forEach(frog =>frog.addEventListener('click', whack));
 
 //module.exports = {
 //  startButton,
