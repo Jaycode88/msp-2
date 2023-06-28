@@ -65,7 +65,7 @@ h2 {
 	margin-top: 0%;
 }
 
-button {
+button.play {
 	box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.5);
 	background: #ad00d7;
 	border: red;
