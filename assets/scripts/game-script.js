@@ -1,4 +1,5 @@
 // N.b some sourcecode from Divya M C m at medium.com and adapted
+let startButton = document.getElementById('play');
 let gameArea = document.querySelector('.game');
 let bins = document.querySelectorAll('.bin');
 let scoreBoard = document.querySelector('.score');
@@ -114,5 +115,6 @@ function whack(e) {
     scoreBoard.textContent = score.toString();
 }
 
+startButton.addEventListener('click', startGame);
 rats.forEach(rat => rat.addEventListener('click', whack));
 mice.forEach(mouse => mouse.addEventListener('click', whack));
