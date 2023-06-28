@@ -209,6 +209,12 @@ button {
     flex: 1;
   }
 
+  /* 404 error page */
+
+  .error {
+	justify-content: center;
+  }
+
 /*  media queries */
 
 @media (max-width: 600px) {
