@@ -29,7 +29,9 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate m
 
 ![screenshot](assets/images/jsvalid.png)
 
-The results mention 1 unused variable. This is due to the startGame event being called directly in the HTML with onClick attribute rather than an even listener in the script file.
+
+
+
 
 ## Browser Compatibility
 
