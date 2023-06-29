@@ -137,28 +137,19 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## User Story Testing
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature09.png) |
-| repeat for all remaining user stories | x |
+| As a new site user, I would like toI would like to be able to read an understand the rules of gameplay, so that I can get engaged with the game effectively. | ![screenshot](assets/images/dropdownsection.png) |
+| As a new site user, I would like to feel challenged, so that I can improve my reaction time and hand-eye cooordination skills. | ![screenshot](assets/images/alert.png) |
+| As a new site user,  I would like to play a simple yet challenging game, so that I can De-stress or fill a gap in time. | ![screenshot](assets/images/gamearea.png) |
+| As a new site user, I would like to feel engaged , so that I can forget whats on my mind and enjoy time out. | ![screenshot](assets/images/gamearea.png) |
+| As a new site user, I would like to be able to navigate with ease, so that I can easily find what I am looking for. | ![screenshot](assets/images/navbarmob.png) |
+| As a returning site user, I would like to challenge myself, so that I can beat my previous highest score. | ![screenshot](assets/images/scoreboard.png) |
+| As a returning site user, I would like to compare my score with freinds or fammily, so that I can create fun competition. | ![screenshot](assets/images/alert.png) |
+| As a site administrator, I should have the ability to manage the game itself, so that I can adjust game settings where needed. | Well noted code to assist |
+|As a site administrator, I should be able to customise the game, so that I can modify visual elements or add new features. | !Well noted code to assist |
+| 
 
 ## Automated Testing
 
