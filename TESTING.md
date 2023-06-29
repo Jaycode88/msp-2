@@ -29,7 +29,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate m
 
 ![screenshot](assets/images/jsvalid.png)
 
-
+I also tested with [JSLint Validator](https://www.jslint.com/).
+The first test failed due to single quotes being used instead of double quotes, Missing curly bracket on line 138, Lines longer than 80 characters,
 
 
 
