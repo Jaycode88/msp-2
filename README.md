@@ -181,6 +181,7 @@ The website is styled as one page with three sections, The first Is the Title, S
 - [Copy Ai](https://app.copy.ai/) Used to create text content.
 - [W3 HTML Validator](https://validator.w3.org/) used to validate HTML.
 - [W3 Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) used to validate CSS.
+- [JSHint](https://jshint.com/) used to validate JavaScript code.
 - [AY11 Color contrast](https://color.a11y.com/Contrast/) Used to validate colour contrast.
 - [javascript30](https://javascript30.com/) Used to research how to build game(Challenge no:30 Whack-A-Mole).
 - [Divya M C M at medium](https://medium.com/@divyamcm/whack-a-mole-game-using-html-css-and-javascript-84b108ec5c8e) Used to research basic code needed.
