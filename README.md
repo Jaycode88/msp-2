@@ -136,6 +136,13 @@ The website is styled as one page with three sections, The first Is the Title, S
 
     ![screenshot](assets/images/alert.png)
 
+- **404 Alert Page**
+
+    -If the user gains a 404 error response within the Rat-A-Whack site, They recieve our own 404  error response with a link within a button to take them back to the Rat-A-Whack home page.
+
+    ![screenshot](assets/images/404error.png)
+
+
 - **Responsive Design**
 
     - The website is designed to be responsive, adapting to different screen sizes and devices.
