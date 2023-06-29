@@ -14,21 +14,20 @@ let timer;
 let countdown;
 let frogCount = 0;
 let maxFrogCount = 2;
-let availableBins = Array.from(bins);
 
 function randomTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
 
 function randomBin(bins) {
-    if (availableBins.length === 0) {
-        availableBins = Array.from(bins); // Reset list when all bins have been used
-      }
-      let index = Math.floor(Math.random() * availableBins.length);
-      let bin = availableBins[index];
-      availableBins.splice(index, 1); // Remove selected bin from the list
-      return bin;
+    let index = Math.floor(Math.random() * bins.length);
+    let bin = bins[index];
+    if (bin === lastBin) {
+        return randomBin(bins);
     }
+    lastBin = bin;
+    return bin;
+}
 
 // Check for animal already in bin
 function checkCollision(bin) {
@@ -47,10 +46,10 @@ function checkCollision(bin) {
         return; // Limit reached, stop appearing frogs
     }
 
-    let frogBin = getRandomBin();
-        if (checkCollision(frogBin)) {
-            return riseFrog(); // Collision detected, choose a different bin
-        }
+    let frogBin = randomBin(bins);
+    if (checkCollision(frogBin)) {
+        return riseFrog();
+    }
 
     setTimeout(() => {
         frogBin.querySelector('.frog').classList.add('up');
