@@ -26,11 +26,22 @@ function randomBin(bins) {
         return randomBin(bins);
     }
     lastBin = bin;
+
+     // Defensive check: Ensure the bin exists + contains required elements
+     if (!bin || !bin.querySelector('.rat') || 
+     !bin.querySelector('.mouse') ||
+     !bin.querySelector('.frog')) {
+     
+        return randomBin(bins);
+    }
     return bin;
 }
 
 // Check for animal already in bin
 function checkCollision(bin) {
+    if (!bin) {
+        return false; // Defensive check: Return false if the bin is null or undefined
+    }
     if (
       bin.querySelector('.rat').classList.contains('up') ||
       bin.querySelector('.mouse').classList.contains('up') ||
@@ -47,6 +58,12 @@ function checkCollision(bin) {
     }
 
     let frogBin = randomBin(bins);
+
+        // Defensive check: Ensure selected frogBin is not null or undefined
+        if (!frogBin) {
+            return;
+        }
+
     if (checkCollision(frogBin)) {
         return riseFrog();
     }
