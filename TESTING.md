@@ -14,6 +14,8 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 ![screenshot](assets/images/htmlvalid.png)
 
+![screenshot](assets/images/404htmlvalid.png)
+
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
