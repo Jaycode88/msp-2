@@ -186,6 +186,9 @@ The website is styled as one page with three sections, The first Is the Title, S
 - [javascript30](https://javascript30.com/) Used to research how to build game(Challenge no:30 Whack-A-Mole).
 - [Divya M C M at medium](https://medium.com/@divyamcm/whack-a-mole-game-using-html-css-and-javascript-84b108ec5c8e) Used to research basic code needed.
 - [Design shack](https://designshack.net/articles/graphics/website-design-for-kids-tips-and-advice/) Used for design research.
+- [Jest](https://jestjs.io/) https://jestjs.io/ersion 26.6.3 Used for testing.
+- [W3 HTML Validator](https://validator.w3.org/) Used to validate Html.
+- [W3 Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) Used to validate CSS.
 
 ## Testing
 
