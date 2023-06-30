@@ -263,4 +263,4 @@ All images: Rat, Mouse, Frog and Compost Bin were provided by [Canva](https://ww
 - I would like to thank Tim Nelson for his ongoing support.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the great advice.
-- I would like to thank the freinds for there on going support and reviewing of game.
+- I would like to thank freinds for there on going support and reviewing of the game.
