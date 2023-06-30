@@ -185,6 +185,7 @@ The website is styled as one page with three sections, The first Is the Title, S
 - [AY11 Color contrast](https://color.a11y.com/Contrast/) Used to validate colour contrast.
 - [javascript30](https://javascript30.com/) Used to research how to build game(Challenge no:30 Whack-A-Mole).
 - [Divya M C M at medium](https://medium.com/@divyamcm/whack-a-mole-game-using-html-css-and-javascript-84b108ec5c8e) Used to research basic code needed.
+- [Design shack](https://designshack.net/articles/graphics/website-design-for-kids-tips-and-advice/) Used for design research.
 
 ## Testing
 
