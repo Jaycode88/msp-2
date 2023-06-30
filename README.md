@@ -250,7 +250,12 @@ This project includes code that was adapted from a tutorial by [Divya M C M](htt
 I found This [Javascript 30 day challenge](https://javascript30.com/) by [Wesbos](https://wesbos.com/) of immense help not only with practising Javascript before starting this project, but also I owe many thanks to the last(30th) challenge on the course, This is a whack-a-mole tutorial which really helped with planning and testing my javascript through the building stage. N.B I can only link to the Challenge home page not directly to the 30th challenge due to sign up needed. 
 
 ### Media
-All images: Rat, Mouse and Compost Bin were provided by [Canva](https://www.canva.com/)
+All images: Rat, Mouse, Frog and Compost Bin were provided by [Canva](https://www.canva.com/)
+
+![screenshot](assets/images/rat.png)
+![screenshot](assets/images/mouse.png)
+![screenshot](assets/images/frog.png)
+![screenshot](assets/images/bin.png)
 
 ### Acknowledgements
 
