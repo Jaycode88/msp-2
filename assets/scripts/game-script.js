@@ -104,7 +104,7 @@ function rise() {
         mouseBin.querySelector('.mouse').classList.add('up');
 
         setTimeout(() => {
-            //After rndom time remove mouse by removing class 'up'
+            //After random time remove mouse by removing class 'up'
             mouseBin.querySelector('.mouse').classList.remove('up');
         }, randomTime(500, 5000));
     }, randomTime(500, 5000));
@@ -165,16 +165,17 @@ function whack(e) {
     scoreBoard.textContent = score.toString();
 }
 
-startButton.addEventListener('click', startGame);
-rats.forEach(rat => rat.addEventListener('click', whack));
-mice.forEach(mouse => mouse.addEventListener('click', whack));
-frogs.forEach(frog =>frog.addEventListener('click', whack));
+//startButton.addEventListener('click', startGame);
+//rats.forEach(rat => rat.addEventListener('click', whack));
+//mice.forEach(mouse => mouse.addEventListener('click', whack));
+//frogs.forEach(frog =>frog.addEventListener('click', whack));
 
-//module.exports = {
-//  startButton,
-//  scoreBoard,
-//  timerElement,
-//  timeUp,
-//  score,
-//  randomTime
-//};
+module.exports = {
+ startButton,
+  scoreBoard,
+ timerElement,
+ timeUp,
+  score,
+  randomTime,
+  checkCollision,
+};

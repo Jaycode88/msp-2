@@ -2,8 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { JSDOM } = require("jsdom");
-jest.mock('../game-script');
+jest.spyOn(window, "alert").mockImplementation(() => { });
 
 const {
   startButton,
@@ -12,7 +11,7 @@ const {
   timeUp,
   score,
   randomTime,
-  bins,
+  checkCollision,
 } = require("../game-script.js")
 
 
@@ -51,7 +50,26 @@ describe('Game functions', () => {
     let min = 1000;
     let max = 2000;
     let result = randomTime(min, max);
+    expect(result).not.toBeFalsy();
     expect(result).toBeGreaterThanOrEqual(min);
     expect(result).toBeLessThanOrEqual(max);
+    
   });
+
+  test('checkCollision returns true when collision detected', () => {
+    // Arrange
+    const bin = document.createElement('div');
+    bin.innerHTML = `
+      <div class="rat up"></div>
+      <div class="mouse"></div>
+      <div class="frog"></div>
+    `;
+  
+    // Act
+    const result = checkCollision(bin);
+  
+    expect(result).toBe(true);
+  });
+
+   
 });
