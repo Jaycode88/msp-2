@@ -165,17 +165,17 @@ function whack(e) {
     scoreBoard.textContent = score.toString();
 }
 
-//startButton.addEventListener('click', startGame);
-//rats.forEach(rat => rat.addEventListener('click', whack));
-//mice.forEach(mouse => mouse.addEventListener('click', whack));
-//frogs.forEach(frog =>frog.addEventListener('click', whack));
+startButton.addEventListener('click', startGame);
+rats.forEach(rat => rat.addEventListener('click', whack));
+mice.forEach(mouse => mouse.addEventListener('click', whack));
+frogs.forEach(frog =>frog.addEventListener('click', whack));
 
-module.exports = {
- startButton,
-  scoreBoard,
- timerElement,
- timeUp,
-  score,
-  randomTime,
-  checkCollision,
-};
+//module.exports = {
+// startButton,
+//  scoreBoard,
+// timerElement,
+// timeUp,
+//  score,
+//  randomTime,
+//  checkCollision,
+//};
