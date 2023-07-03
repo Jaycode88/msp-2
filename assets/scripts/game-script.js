@@ -161,13 +161,8 @@ function whack(e) {
         score += 10;
     }
     
-    this.removeEventListener('click', whack); // remove eventlistener to stop double click double points
     this.classList.remove('up');
-    
     scoreBoard.textContent = score.toString();
-    setTimeout(() => {
-        this.addEventListener('click', whack); // Re-enable click event after 0.5 seconds
-    }, 500);
 }
 
 startButton.addEventListener('click', startGame);
