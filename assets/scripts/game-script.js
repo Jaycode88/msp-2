@@ -128,6 +128,8 @@ function startTimer(duration) {
 }
 
 function startGame() {
+    startButton.disabled = true; // Disable the play button
+    startButton.style.display = 'none'; // Hide the play button
     gameArea.style.display = 'flex';
     scoreBoard.textContent = '0';
     timeUp = false;
@@ -147,6 +149,8 @@ function endGame() {
     clearTimeout(timer);
     clearInterval(countdown);
     gameArea.style.display = 'none';
+    startButton.disabled = false; // enable the play button
+    startButton.style.display = 'inline-block'; // show the play button
     //show alert with player score
     alert("Game Over! Well done, you recieved " + score + " points. Try again to see if you can do better!");
 }
