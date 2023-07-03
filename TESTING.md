@@ -242,6 +242,9 @@ This can be used for both "fixed" and "unresolved" issues.
 
 ## Bugs
 
+N.B double click = double points solved
+Rarely animals appear in same container even though code to stop this. attempted few diff ways of ammending but didnt stop problem completly decided to leave as it adds charachter to the animals and difficulty to the game.
+
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
 It's very important to document any bugs you've discovered while developing the project.
