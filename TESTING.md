@@ -237,10 +237,10 @@ Once ready, to run the tests, use this command:
 
 Below are the results from the tests that I've written for this application:
 
-| Test Suites | Tests | Coverage | Screenshot |
+| Test Suites | Tests | Screenshot ||
 | --- | --- | --- | --- |
-| 1 passed | 16 passed | 55% | ![screenshot](documentation/js-test-coverage.png) |
-| x | x | x | repeat for all remaining tests |
+| 1 passed | 7 passed | 55% | ![screenshot](/assets/images/jestpassed.png) |
+
 
 #### Jest Test Issues
 
