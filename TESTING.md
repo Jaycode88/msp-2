@@ -133,9 +133,9 @@ Defensive programming was manually tested with the below user acceptance testing
 |  | Click on About link         | Redirection to about on homepage | Pass |  |
 | | Click on "Play!" button | "Play!" button hide, Display gameArea, Start game, timer start, animal animation start | Pass |
 || Finishes game | Display Alert message informing score, Hide gameArea, Show "Play!"  button | Pass ||
-|| Click Animal | Recieve correct points, Animal drop after whack | Pass | Before testing  User could gain double points by double clicking animal. Now solved see bugs.||
-|| Play button clicked during game play | null | Pass | Did cause timer error. Now solved see bugs.||
-|| Animals appear in same bin | Not too happen to often | Pass | for data from tests see bugs. ||
+|| Click Animal | Recieve correct points, Animal drop after whack | Pass | Before testing  User could gain double points by double clicking animal. Now solved see [bugs](#bugs).||
+|| Play button clicked during game play | null | Pass | Did cause timer error. Now solved see [bugs](#bugs).||
+|| Animals appear in same bin | Not too happen to often | Pass | for data from tests see [bugs](#bugs). ||
 |
 
 ## User Story Testing
