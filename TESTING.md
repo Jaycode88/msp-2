@@ -133,6 +133,9 @@ Defensive programming was manually tested with the below user acceptance testing
 |  | Click on About link         | Redirection to about on homepage | Pass |  |
 | | Click on "Play!" button | "Play!" button hide, Display gameArea, Start game, timer start, animal animation start | Pass |
 || Finishes game | Display Alert message informing score, Hide gameArea, Show "Play!"  button | Pass ||
+|| Click Animal | Recieve correct points, Animal drop after whack | Pass | Before testing  User could gain double points by double clicking animal. Now solved see bugs.||
+|| Play button clicked during game play | either restart game or null | Pass | Did cause timer error. Now solved see bugs.||
+|| Animals appear in same bin | Not too happen to often | Pass | for data from tests see bugs. ||
 |
 
 ## User Story Testing
@@ -159,13 +162,7 @@ I fully acknowledge and understand that, in a real-world scenario, an extensive 
 
 ### JavaScript (Jest Testing)
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Adjust the code below (file names, etc.) to match your own project files/folders.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I have used the [Jest](https://jestjs.io) JavaScript testing framework to test the application functionality.
+I have used the [Jest](https://jestjs.io) version 26.6.3 JavaScript testing framework to test the application functionality.
 
 In order to work with Jest, I first had to initialize NPM.
 
@@ -174,7 +171,7 @@ In order to work with Jest, I first had to initialize NPM.
 
 Add Jest to a list called **Dev Dependencies** in a dev environment:
 
-- `npm install --save-dev jest`
+- `npm install --save-dev jest@26.6.3`
 
 **IMPORTANT**: Initial configurations
 
@@ -187,8 +184,18 @@ Due to a change in Jest's default configuration, you'll need to add the followin
  * @jest-environment jsdom
  */
 
-const { test, expect } = require("@jest/globals");
-const { function1, function2, function3, etc. } = require("../script-name");
+jest.spyOn(window, "alert").mockImplementation(() => { });
+
+const {
+  startButton,
+  scoreBoard,
+  timerElement,
+  timeUp,
+  score,
+  randomTime,
+  checkCollision,
+} = require("../game-script.js")
+
 
 beforeAll(() => {
     let fs = require("fs");
@@ -206,8 +213,14 @@ Finally, at the bottom of the script file where your primary scripts are written
 Make sure to include the name of all of your functions that are being tested in the `.test.js` file.
 
 ```js
-if (typeof module !== "undefined") module.exports = {
-    function1, function2, function3, etc.
+module.exports = {
+    startButton,
+    scoreBoard,
+    timerElement,
+    timeUp,
+    score,
+    randomTime,
+    checkCollision,
 };
 ```
 
