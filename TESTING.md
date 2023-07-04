@@ -134,7 +134,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on "Play!" button | "Play!" button hide, Display gameArea, Start game, timer start, animal animation start | Pass |
 || Finishes game | Display Alert message informing score, Hide gameArea, Show "Play!"  button | Pass ||
 || Click Animal | Recieve correct points, Animal drop after whack | Pass | Before testing  User could gain double points by double clicking animal. Now solved see bugs.||
-|| Play button clicked during game play | either restart game or null | Pass | Did cause timer error. Now solved see bugs.||
+|| Play button clicked during game play | null | Pass | Did cause timer error. Now solved see bugs.||
 || Animals appear in same bin | Not too happen to often | Pass | for data from tests see bugs. ||
 |
 
@@ -255,19 +255,16 @@ This can be used for both "fixed" and "unresolved" issues.
 
 ## Bugs
 
-N.B double click = double points solved
-Rarely animals appear in same container even though code to stop this. attempted few diff ways of ammending but didnt stop problem completly decided to leave as it adds charachter to the animals and difficulty to the game.
+### Fixed bugs
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+When first testing I noticed that when playing on desktop, If the user double-clicked on the animal they gained double points. I added code to remove the click event listener for jus 0.25 seconds while the animal dissapeared again. This solved the problem.
+[screenshot](assets/images/)
 
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
+On all devices if the user clicked the "Play!" Button during the game, The timer would flick through as if it was trying to display 2 or 3 timers at once with different times. To solve the error I chose to remove the "play!" button whilst the game was in play and have it re-appear at the end of game play.
 
-For JavaScript and Python applications, it's best to screenshot the errors to include them as well.
+[screenshot](assets/images/)
 
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - JS Uncaught ReferenceError: `foobar` is undefined/not defined
 
