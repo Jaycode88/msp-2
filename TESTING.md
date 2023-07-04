@@ -258,12 +258,22 @@ This can be used for both "fixed" and "unresolved" issues.
 ### Fixed bugs
 
 When first testing I noticed that when playing on desktop, If the user double-clicked on the animal they gained double points. I added code to remove the click event listener for jus 0.25 seconds while the animal dissapeared again. This solved the problem.
-[screenshot](assets/images/)
 
-On all devices if the user clicked the "Play!" Button during the game, The timer would flick through as if it was trying to display 2 or 3 timers at once with different times. To solve the error I chose to remove the "play!" button whilst the game was in play and have it re-appear at the end of game play.
 
-[screenshot](assets/images/)
+On all devices if the user clicked the "Play!" Button during the game, The timer would flick through as if it was trying to display 2 or 3 timers at once with different times. To solve the error I chose to remove and disable the "play!" button whilst the game was in play and have it re-appear and be enabled at the end of game play. See code added below..
 
+```js
+function startGame() {
+    startButton.disabled = true; // Disable the play button
+    startButton.style.display = 'none'; // Hide the play button
+   
+}
+
+function endGame() {
+     startButton.disabled = false; // enable the play button
+    startButton.style.display = 'inline-block'; // show the play button
+}
+```
 
 
 - JS Uncaught ReferenceError: `foobar` is undefined/not defined
