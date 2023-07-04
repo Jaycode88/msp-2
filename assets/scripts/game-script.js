@@ -169,8 +169,8 @@ function whack(e) {
     this.classList.remove('up');
     scoreBoard.textContent = score.toString();
     setTimeout(() => {
-        this.addEventListener('click', whack); // Re-enable click event after 0.5 seconds
-    }, 500);
+        this.addEventListener('click', whack); // Re-enable click event after 0.25 seconds
+    }, 250);
 
 }
 
