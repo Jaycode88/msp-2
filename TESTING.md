@@ -131,8 +131,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on Home link in navbar | Redirection to Home page | Pass | |
 |  |Click on Instructions link   | Redirection to instructions on homepage | Pass | |
 |  | Click on About link         | Redirection to about on homepage | Pass |  |
-| | Click on "Play!" button | Start game, timer start, animal animation start | Pass |
-|| Finishes game | Display Alert message informing score | Pass ||
+| | Click on "Play!" button | "Play!" button hide, Display gameArea, Start game, timer start, animal animation start | Pass |
+|| Finishes game | Display Alert message informing score, Hide gameArea, Show "Play!"  button | Pass ||
 |
 
 ## User Story Testing
