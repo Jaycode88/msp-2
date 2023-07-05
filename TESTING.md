@@ -152,7 +152,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a returning site user, I would like to compare my score with freinds or fammily, so that I can create fun competition. | ![screenshot](documentation/alert.png) |
 | As a site administrator, I should have the ability to manage the game itself, so that I can adjust game settings where needed. | Well noted code to assist |
 |As a site administrator, I should be able to customise the game, so that I can modify visual elements or add new features. | Well noted code to assist |
-| 
+||
 
 ## Automated Testing
 

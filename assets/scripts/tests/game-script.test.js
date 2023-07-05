@@ -57,19 +57,15 @@ describe('Game functions', () => {
   });
 
   test('checkCollision returns true when collision detected', () => {
-    // Arrange
     const bin = document.createElement('div');
     bin.innerHTML = `
       <div class="rat up"></div>
       <div class="mouse"></div>
       <div class="frog"></div>
     `;
-  
-    // Act
+
     const result = checkCollision(bin);
   
     expect(result).toBe(true);
   });
-
-   
 });
