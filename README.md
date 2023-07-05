@@ -6,7 +6,7 @@ Welcome to Whack-a-Rat, a classic game built with HTML, CSS, and JavaScript! The
 Whack-a-Rat is a fun and challenging way to pass the time. Whether you're looking for a quick break or a longer gaming session, Whack-a-Rat is the perfect choice. With its responsive design, you can play Whack-a-Rat on your desktop, laptop, or mobile device.
 ## [View The Live Project Here](https://jaycode88.github.io/msp-2/)
 
-![screenshot](assets/images/responsive.png)
+![screenshot](documentation/responsive.png)
 
 ## UX
 The Whack-A-Rat Game has been designed to provide an enjoyable and engaging user experience.
@@ -27,7 +27,7 @@ I used [Design shack](https://designshack.net/articles/graphics/website-design-f
 
 I used [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) to generate my colour palette.
 
-![screenshot](assets/images/colourtheme.jpeg)
+![screenshot](documentation/colourtheme.jpeg)
 
 ### Typography
 I used [Design shack](https://designshack.net/articles/graphics/website-design-for-kids-tips-and-advice/) To research typography.
@@ -68,17 +68,17 @@ I've used [Figma](https://www.figma.com/) to design my site wireframes.
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](assets/images/wireframemobile.png) |
-| Tablet | ![screenshot](assets/images/wireframetablet.png) |
-| Desktop | ![screenshot](assets/images/wireframedesktop.png) |
+| Mobile | ![screenshot](documentation/wireframemobile.png) |
+| Tablet | ![screenshot](documentation/wireframetablet.png) |
+| Desktop | ![screenshot](documentation/wireframedesktop.png) |
 
 ## High Fidelity Prototype
 I used [Figma](https://www.figma.com/) to create high fidelity prototypes for mobile, tablet and desktop devices.
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](assets/images/highfidmobile.png) |
-| Tablet | ![screenshot](assets/images/highfidtablet.png) |
-| Desktop | ![screenshot](assets/images/highfiddesktop.png) |
+| Mobile | ![screenshot](documentation/highfidmobile.png) |
+| Tablet | ![screenshot](documentation/highfidtablet.png) |
+| Desktop | ![screenshot](documentation/highfiddesktop.png) |
 
 
 ## Features
@@ -91,8 +91,8 @@ The website is styled as one page with three sections, The first Is the Title, S
     - The website includes a navigation bar at the top, Which allows users to easily navigate between different sections of the site.
     - The navigation bar includes a logo and links to the Home, Instructions and About Sections.
     - The navigation bar is responsive to different screen sizes
-![screenshot](assets/images/navbardesk.png)
-![screenshot](assets/images/navbarmob.png)
+![screenshot](documentation/navbardesk.png)
+![screenshot](documentation/navbarmob.png)
 
 - **Title, Scoreboard and Play Button**
 
@@ -101,7 +101,7 @@ The website is styled as one page with three sections, The first Is the Title, S
     - A timer indicates the time left in the game, Starting from 60 seconds.
     - A "Play!" button allows the user to start the game, Upon the user clicking the "Play!" button the game play area appears.
 
-![screenshot](assets/images/scoreboard.png)
+![screenshot](documentation/scoreboard.png)
 
 - **Game Area**
 
@@ -111,7 +111,7 @@ The website is styled as one page with three sections, The first Is the Title, S
     - Rats and mice appear and disappear with animation.
     - The Game area is initially hidden and only displayed when the "Play!" button is clicked. 
 
-![screenshot](assets/images/gamearea.png)
+![screenshot](documentation/gamearea.png)
 
 - **Instructions and About Sections**
 
@@ -119,7 +119,7 @@ The website is styled as one page with three sections, The first Is the Title, S
     - The "About Whack-A-Rat" section gives information about the game, its development and the technologies used.
     - Both sections provide detailed descriptions to inform and engage users.
 
-    ![screenshot](assets/images/dropdownsection.png)
+    ![screenshot](documentation/dropdownsection.png)
 
 - **Footer**
 
@@ -127,20 +127,20 @@ The website is styled as one page with three sections, The first Is the Title, S
     - The footer includes the game name and contact information.
     - Social media links are provided for users to connect with the game's social profiles.
 
-    ![screenshot](assets/images/footer.png)
+    ![screenshot](documentation/footer.png)
 
 - **End of game alert**
 
     - When the game has finished, An Alert is displayed that informs the user that the game has ended and provides them with their score.
     - The alert also uses text to entice the user to play again. 
 
-    ![screenshot](assets/images/alert.png)
+    ![screenshot](documentation/alert.png)
 
 - **404 Alert Page**
 
     -If the user gains a 404 error response within the Rat-A-Whack site, They recieve our own 404  error response with a link within a button to take them back to the Rat-A-Whack home page.
 
-    ![screenshot](assets/images/404error.png)
+    ![screenshot](documentation/404error.png)
 
 
 - **Responsive Design**
