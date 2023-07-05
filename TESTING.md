@@ -244,14 +244,32 @@ Below are the results from the tests that I've written for this application:
 
 #### Jest Test Issues
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+I first attempted to set up my Jest tests by mocking the Dom, I found I was not able to pass the simplest of tests, I re-watched the walkthrough content and decided to use the Jest spy method which enabled me to pass the tests shown above.
 
-Use this section to list any known issues you ran into while writing your Jest tests.
-Remember to include screenshots (where possible), and a solution to the issue (if known).
+After passing the 7 tests I went on to attemp to test the startGame function but ran into difficulty due to not being able to re-asign to constant variables. Therefore I attempted to change the imports from const to let, see below:
+```js
+let {
+  startButton,
+  scoreBoard,
+  timerElement,
+  timeUp,
+  score,
+  randomTime,
+  checkCollision,
+} = require("../game-script.js")
+```
+After this I first tried to test wether the startGame function was correctly disabling the start button but I ran into the error of" Cannot set properties of null". see below:
 
-This can be used for both "fixed" and "unresolved" issues.
+![screenshot](documentation/jestfail1.png)
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+I decided to roll back a little and try something a more simple. I wrote a test to check that the startGame function  reset the scoreboard test content to "0". See below: 
+
+![screenshot](documentation/triedcode.png)
+
+When testing  I got a fail due to "Cannot set properties of null"  and cannot read properties of null". See below:
+
+![screenshot](documentation/soceresetfail.png)
+
 
 ## Bugs
 
