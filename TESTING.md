@@ -270,6 +270,18 @@ When testing  I got a fail due to "Cannot set properties of null"  and cannot re
 
 ![screenshot](documentation/soceresetfail.png)
 
+I attempted to define the variable in the test before using it which solved the error of "cannot set properties of null".
+
+![screenshot](documentation/simplescoretest.png)
+
+As I wasnt using all the code in the function for this very simple test, I noted out all code that was giving "cannot read properties of null".
+
+![screenshot](documentation/noteoutcode.png)
+
+I ran the test and recieved a fail. It would seem that the function is not being called in the test correctly.
+
+![screenshot](documentation/newfail.png)
+
 
 ## Bugs
 
