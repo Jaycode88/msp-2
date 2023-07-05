@@ -282,6 +282,7 @@ I ran the test and recieved a fail. It would seem that the function is not being
 
 ![screenshot](documentation/newfail.png)
 
+I did look into how to mock functions and made a few attempts but without a more comprehensive coverage of jest testing in the course content, I found it extremely hard to move foward.
 
 ## Bugs
 
