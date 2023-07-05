@@ -12,9 +12,9 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 - link to results: https://validator.w3.org/nu/?doc=https%3A%2F%2Fjaycode88.github.io%2Fmsp-2
 
-![screenshot](assets/images/htmlvalid.png)
+![screenshot](documentation/htmlvalid.png)
 
-![screenshot](assets/images/404htmlvalid.png)
+![screenshot](documentation/404htmlvalid.png)
 
 ### CSS
 
@@ -22,14 +22,14 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 - link to results: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjaycode88.github.io%2Fmsp-2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
 
-![screenshot](assets/images/cssvalid.png)
+![screenshot](documentation/cssvalid.png)
 
 
 ### JavaScript
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate my JS file.
 
-![screenshot](assets/images/jsvalid.png)
+![screenshot](documentation/jsvalid.png)
 
 ## Browser Compatibility
 
@@ -60,7 +60,7 @@ I have tested my deployed project with the following web browsers to check for c
 |         |  Scoreboard   |        Y      |          Y         |
 
 
-![screenshot](assets/images/browsertest.png)
+![screenshot](documentation/browsertest.png)
 
 ## Responsiveness
 
@@ -91,31 +91,31 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 ### Desktop
 
-![screenshot](assets/images/desktop.png)
+![screenshot](documentation/desktop.png)
 
-![screenshot](assets/images/desktopalert.png)
+![screenshot](documentation/desktopalert.png)
 
 ### Tablet
 
-![screenshot](assets/images/tablet.png)
+![screenshot](documentation/tablet.png)
 
-![screenshot](assets/images/tabletgameplay.png)
+![screenshot](documentation/tabletgameplay.png)
 
 ### Mobile
 
-![screenshot](assets/images/mobile.jpg)
+![screenshot](documentation/mobile.jpg)
 
-![screenshot](assets/images/mobilealert.jpg)
+![screenshot](documentation/mobilealert.jpg)
 
 ## Lighthouse Audit
 
 ### Desktop
 
-![screenshot](assets/images/lighthousedesktop.png)
+![screenshot](documentation/lighthousedesktop.png)
 
 ### Mobile
 
-![screenshot](assets/images/lighthousemobile.png)
+![screenshot](documentation/lighthousemobile.png)
 
 
 
@@ -143,13 +143,13 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like toI would like to be able to read an understand the rules of gameplay, so that I can get engaged with the game effectively. | ![screenshot](assets/images/dropdownsection.png) |
-| As a new site user, I would like to feel challenged, so that I can improve my reaction time and hand-eye cooordination skills. | ![screenshot](assets/images/alert.png) |
-| As a new site user,  I would like to play a simple yet challenging game, so that I can De-stress or fill a gap in time. | ![screenshot](assets/images/gamearea.png) |
-| As a new site user, I would like to feel engaged , so that I can forget whats on my mind and enjoy time out. | ![screenshot](assets/images/gamearea.png) |
-| As a new site user, I would like to be able to navigate with ease, so that I can easily find what I am looking for. | ![screenshot](assets/images/navbarmob.png) |
-| As a returning site user, I would like to challenge myself, so that I can beat my previous highest score. | ![screenshot](assets/images/scoreboard.png) |
-| As a returning site user, I would like to compare my score with freinds or fammily, so that I can create fun competition. | ![screenshot](assets/images/alert.png) |
+| As a new site user, I would like toI would like to be able to read an understand the rules of gameplay, so that I can get engaged with the game effectively. | ![screenshot](documentation/dropdownsection.png) |
+| As a new site user, I would like to feel challenged, so that I can improve my reaction time and hand-eye cooordination skills. | ![screenshot](documentation/alert.png) |
+| As a new site user,  I would like to play a simple yet challenging game, so that I can De-stress or fill a gap in time. | ![screenshot](documentation/gamearea.png) |
+| As a new site user, I would like to feel engaged , so that I can forget whats on my mind and enjoy time out. | ![screenshot](documentation/gamearea.png) |
+| As a new site user, I would like to be able to navigate with ease, so that I can easily find what I am looking for. | ![screenshot](documentation/navbarmob.png) |
+| As a returning site user, I would like to challenge myself, so that I can beat my previous highest score. | ![screenshot](documentation/scoreboard.png) |
+| As a returning site user, I would like to compare my score with freinds or fammily, so that I can create fun competition. | ![screenshot](documentation/alert.png) |
 | As a site administrator, I should have the ability to manage the game itself, so that I can adjust game settings where needed. | Well noted code to assist |
 |As a site administrator, I should be able to customise the game, so that I can modify visual elements or add new features. | Well noted code to assist |
 | 
@@ -239,7 +239,7 @@ Below are the results from the tests that I've written for this application:
 
 | Test Suites | Tests | Screenshot ||
 | --- | --- | --- | --- |
-| 1 passed | 7 passed | 55% | ![screenshot](/assets/images/jestpassed.png) |
+| 1 passed | 7 passed | ![screenshot](documentation/jestpassed.png) |
 
 
 #### Jest Test Issues
@@ -312,7 +312,7 @@ I ran manual game play tests to see the rate of collision still happening per ga
 After performing these manual tests I found that whilst collisions were not happening a great amount, They contributed another challenging element to the game as well as conforming with the instructions that inform of the mouse being "sneaky", As It seemed when collision did happen it was mostly the mouse appearing to jump infront of the rat.
 
 The user can change their score via the console in google developer tools. I did research and found that I could make it harder for the user to modify their score by creating an update score function that the other functions used to change the scores when whacks are achieved, How ever when I tested this It was still very easy for the user to update the score. I decided that the game is a personal challenge and see no real problem for me as a site administrator if users want to cheat themselves.
-As noted in the future features section of the README.md I would like to add a server side scoreboard so that I can create a leader board etc, This will make it much harder for the user to modify scores in the console.
+As noted in the future features section of the [README.md](README.md) I would like to add a server side scoreboard so that I can create a leader board etc, This will make it much harder for the user to modify scores in the console.
 
 
 
