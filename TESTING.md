@@ -58,6 +58,7 @@ I have tested my deployed project with the following web browsers to check for c
 |         |  Gameplay     |        Y      |          Y         |
 |         |  Alert        |        Y      |          Y         |
 |         |  Scoreboard   |        Y      |          Y         |
+|
 
 
 ![screenshot](documentation/browsertest.png)
@@ -88,6 +89,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 |           | Gameplay  | Y             |
 |           | Alert     | Y             |
 |           | Scoreboard| Y             |
+|
 
 ### Desktop
 
@@ -152,7 +154,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a returning site user, I would like to compare my score with freinds or fammily, so that I can create fun competition. | ![screenshot](documentation/alert.png) |
 | As a site administrator, I should have the ability to manage the game itself, so that I can adjust game settings where needed. | Well noted code to assist |
 |As a site administrator, I should be able to customise the game, so that I can modify visual elements or add new features. | Well noted code to assist |
-||
+|
 
 ## Automated Testing
 
@@ -240,6 +242,7 @@ Below are the results from the tests that I've written for this application:
 | Test Suites | Tests | Screenshot ||
 | --- | --- | --- | --- |
 | 1 passed | 7 passed | ![screenshot](documentation/jestpassed.png) |
+|
 
 
 #### Jest Test Issues
