@@ -268,7 +268,7 @@ I decided to roll back a little and try something a more simple. I wrote a test 
 
 When testing  I got a fail due to "Cannot set properties of null"  and cannot read properties of null". See below:
 
-![screenshot](documentation/soceresetfail.png)
+![screenshot](documentation/scoreresetfail.png)
 
 I attempted to define the variable in the test before using it which solved the error of "cannot set properties of null".
 
