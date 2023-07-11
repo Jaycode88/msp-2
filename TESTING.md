@@ -291,7 +291,16 @@ I did look into how to mock functions and made a few attempts but without a more
 
 ### Fixed bugs
 
-When first testing I noticed that when playing on desktop, If the user double-clicked on the animal they gained double points. I added code to remove the click event listener for jus 0.25 seconds while the animal dissapeared again. This solved the problem.
+When first testing I noticed that when playing on desktop, If the user double-clicked on the animal they gained double points. I added code to remove the click event listener for jus 0.25 seconds while the animal dissapeared again. This solved the problem. Please see the code below which was put within the whack event function to stop the double-click bug..
+
+```
+this.removeEventListener('click', whack); // remove EL to stop double click double points
+	this.classList.remove('up');
+	scoreBoard.textContent = score.toString();
+	setTimeout(() => {
+		this.addEventListener('click', whack); // Re-enable click event after 0.25 seconds
+	}, 250);
+```
 
 
 On all devices if the user clicked the "Play!" Button during the game, The timer would flick through as if it was trying to display 2 or 3 timers at once with different times. To solve the error I chose to remove and disable the "play!" button whilst the game was in play and have it re-appear and be enabled at the end of game play. See code added below..
