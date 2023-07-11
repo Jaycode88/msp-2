@@ -189,6 +189,8 @@ The website is styled as one page with three sections, The first Is the Title, S
 - [Jest](https://jestjs.io/) version 26.6.3 Used for testing.
 - [W3 HTML Validator](https://validator.w3.org/) Used to validate Html.
 - [W3 Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) Used to validate CSS.
+- [Favicon](https://favicon.io) Was used to convert an image to a favicon.
+- [Font Awesome](https://fontawesome.com/) Provided the social media icons that appear in the footer bar.
 
 ## Testing
 
