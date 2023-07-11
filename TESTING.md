@@ -323,6 +323,23 @@ Animals Do Appear in the same bin occasionally. I added code during the build pr
 
 Code added during build phase to stop collision:
 ```js
+
+// Check for animal already in bin
+function checkCollision(bin) {
+	// Defensive check: Return false if the bin is null or undefined
+	if (!bin) {
+		return false;
+	}
+	if (
+		bin.querySelector('.rat').classList.contains('up') ||
+		bin.querySelector('.mouse').classList.contains('up') ||
+		bin.querySelector('.frog').classList.contains('up')
+	) {
+		return true; // Collision detected
+	}
+	return false; // No collision
+}
+
 function rise() {
     let ratBin = randomBin(bins);
     let mouseBin = randomBin(bins);
