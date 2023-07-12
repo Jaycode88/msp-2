@@ -113,6 +113,15 @@ The website is styled as one page with three sections, The first Is the Title, S
 
 ![screenshot](documentation/gamearea.png)
 
+- **Mallet Cursor**
+
+    - When the user is with the Game area on a device that has a cursor, The cursor appears as an animated Mallet instead of the standard pointer curser.
+
+    - When the user is outside of the game area the cursor returns to the standard non-animated pointer cursor.
+
+    ![screenshot](assets/images/mallet1.png)
+    ![screenshot](assets/images/mallet2.png)
+
 - **Instructions and About Sections**
 
     - The website includes an "Instructions" Section that provides an overview of the game rules and how to play.
@@ -172,6 +181,7 @@ The website is styled as one page with three sections, The first Is the Title, S
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Canva](https://www.canva.com/) used for logo creation and image stock.
+- [PngTree](https://pngtree.com/) used for mallet stock image.
 - [Figma](https://www.figma.com/) used for wireframes and high fidelity prototypes.
 - [Gimp](https://www.gimp.org/) used for image manipulation(Resizing,converting file type etc.)
 - [Adobe colour wheel](https://color.adobe.com/) used for selecting colour scheme.
@@ -252,12 +262,17 @@ This project includes code that was adapted from a tutorial by [Divya M C M](htt
 I found This [Javascript 30 day challenge](https://javascript30.com/) by [Wesbos](https://wesbos.com/) of immense help not only with practising Javascript before starting this project, but also I owe many thanks to the last(30th) challenge on the course, This is a whack-a-mole tutorial which really helped with planning and testing my javascript through the building stage. N.B I can only link to the Challenge home page not directly to the 30th challenge due to sign up needed. 
 
 ### Media
-All images: Rat, Mouse, Frog and Compost Bin were provided by [Canva](https://www.canva.com/)
+The following images: Rat, Mouse, Frog and Compost Bin, were provided by [Canva](https://www.canva.com/)
 
 ![screenshot](assets/images/rat.png)
 ![screenshot](assets/images/mouse.png)
 ![screenshot](assets/images/frog.png)
 ![screenshot](assets/images/bin.png)
+
+The Mallet Image for the cursor was from [PngTree](https://pngtree.com/https://pngtree.com/freepng/cartoon-hammer-png-download_4402979.html) and Rotated with [Online Png Tools](https://onlinepngtools.com/rotate-png) to create the animation effect.
+
+![screenshot](assets/images/mallet1.png)
+![screenshot](assets/images/mallet2.png)
 
 ### Acknowledgements
 
