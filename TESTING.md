@@ -46,18 +46,22 @@ I have tested my deployed project with the following web browsers to check for c
 |         |  Game play    |        Y      |          Y         |
 |         |  Alert        |        Y      |          Y         |
 |         |  Scoreboard   |        Y      |          Y         |
+|         |  Mallet cursor|        Y      |          Y         |
 | Firefox |  Index        |        Y      |          Y         |
 |         |  Game play    |        Y      |          Y         |
 |         |  Alert        |        Y      |          Y         |
 |         |  Scoreboard   |        Y      |          Y         |
+|         |  Mallet cursor|        Y      |          Y         |
 |  Edge   |  Index        |        Y      |          Y         |
 |         |  Game play    |        Y      |          Y         |
 |         |  Alert        |        Y      |          Y         |
 |         |  Scoreboard   |        Y      |          Y         |
+|         |  Mallet cursor|        Y      |          Y         |
 |  Opera  |  Index        |        Y      |          Y         |
 |         |  Gameplay     |        Y      |          Y         |
 |         |  Alert        |        Y      |          Y         |
 |         |  Scoreboard   |        Y      |          Y         |
+|         |  Mallet cursor|        Y      |          Y         |
 |
 
 
