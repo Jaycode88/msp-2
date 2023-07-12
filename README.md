@@ -276,7 +276,7 @@ The Mallet Image for the cursor was from [PngTree](https://pngtree.com/https://p
 
 ### Acknowledgements
 
-- I would like to thank my Code Institute mentor, [Alex K](https://calendly.com/alex_mentor) for their support throughout the development of this project.
+- I would like to thank my Code Institute mentor, [Alex K](https://calendly.com/alex_mentor) for his amazing help, advice and support throughout the development of this project.
 - I would like to thank Tim Nelson for his ongoing support.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the great advice.
