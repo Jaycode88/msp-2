@@ -82,6 +82,10 @@ button.play {
 
 /* gameArea and game play N.b sourcecode from Divya M C m at medium.com and adapted*/
 
+.game:active {
+	cursor: url("../images/mallet2.png"), auto;
+}
+
 .game {
 	width: 800px;
 	height: 400px;
@@ -90,6 +94,7 @@ button.play {
 	margin: 0 auto;
 	background-color: #d3ff8f;
 	margin-bottom: 3rem;
+	cursor: url("../images/mallet1.png"), auto;
 }
 
 .bin {
