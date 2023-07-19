@@ -32,6 +32,8 @@ I used [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) to gener
 ### Typography
 I used [Design shack](https://designshack.net/articles/graphics/website-design-for-kids-tips-and-advice/) To research typography.
 
+![screenshot](documentation/sansserif.png)
+
  I chose to use only sans-serif fonts. The reason for this is that sans-serif fonts are very clear and easy to read, which is important for younger children with less reading ability, as well as for older children and adults who may not be at the expected reading level.
 
 By using a sans-serif font, I was able to ensure that all text in the game was clear and easy to read, regardless of the user's age or reading ability.
