@@ -1,12 +1,15 @@
 // N.b some sourcecode from Divya M C m at medium.com and adapted
-let startButton = document.getElementById('play');
-let gameArea = document.querySelector('.game');
-let bins = document.querySelectorAll('.bin');
-let scoreBoard = document.querySelector('.score');
-let rats = document.querySelectorAll('.rat');
-let mice = document.querySelectorAll('.mouse');
-let frogs = document.querySelectorAll('.frog');
-let timerElement = document.querySelector('.timer');
+
+// Get necessary elements from the DOM
+let startButton = document.getElementById('play'); // Start button element
+let gameArea = document.querySelector('.game'); // Game area element
+let bins = document.querySelectorAll('.bin'); // Array of bins
+let scoreBoard = document.querySelector('.score'); // Score display element
+let rats = document.querySelectorAll('.rat'); // Array of rats
+let mice = document.querySelectorAll('.mouse'); // Array of mice
+let frogs = document.querySelectorAll('.frog'); // Array of frogs
+let timerElement = document.querySelector('.timer') // Timer display element
+
 let lastBin;
 let timeUp = false;
 let score = 0;
@@ -15,10 +18,21 @@ let countdown;
 let frogCount = 0;
 let maxFrogCount = 2;
 
+/**
+ * Generates a random time between the given minimum and maximum values.
+ * @param {number} min - The minimum value.
+ * @param {number} max - The maximum value.
+ * @returns {number} The generated random time.
+ */
 function randomTime(min, max) {
 	return Math.round(Math.random() * (max - min) + min);
 }
 
+/**
+ * Selects a random bin from the provided array of bins.
+ * @param {NodeList} bins - The array of bins.
+ * @returns {Element} The selected bin.
+ */
 function randomBin(bins) {
 	let index = Math.floor(Math.random() * bins.length);
 	let bin = bins[index];
@@ -36,12 +50,17 @@ function randomBin(bins) {
 	return bin;
 }
 
-// Check for animal already in bin
+/**
+ * Checks if an animal is already present in the provided bin.
+ * @param {Element} bin - The bin to check for collision.
+ * @returns {boolean} True if collision detected, false otherwise.
+ */
 function checkCollision(bin) {
-	// Defensive check: Return false if the bin is null or undefined
 	if (!bin) {
-		return false;
+		return false; // Defensive check: Return false if the bin is null or undefined
 	}
+
+	// Check if any of the animals (rat, mouse, frog) is already up
 	if (
 		bin.querySelector('.rat').classList.contains('up') ||
 		bin.querySelector('.mouse').classList.contains('up') ||
@@ -52,6 +71,9 @@ function checkCollision(bin) {
 	return false; // No collision
 }
 
+/**
+ * Makes a frog appear and disappear twice in a game.
+ */
 function riseFrog() {
 	if (frogCount >= maxFrogCount) {
 		return; // Limit reached, stop appearing frogs
@@ -61,11 +83,11 @@ function riseFrog() {
 
 	// Defensive check: Ensure selected frogBin is not null or undefined
 	if (!frogBin) {
-		return;
+		return; // Retry if the selected frogBin is null or undefined
 	}
 
 	if (checkCollision(frogBin)) {
-		return riseFrog();
+		return riseFrog(); // Retry if there is a collision
 	}
 
 	setTimeout(() => {
@@ -83,7 +105,9 @@ function riseFrog() {
 	}
 }
 
-
+/**
+ * Makes a rat and a mouse appear and disappear periodically.
+ */
 function rise() {
 	let ratBin = randomBin(bins);
 	let mouseBin = randomBin(bins);
@@ -119,7 +143,10 @@ function rise() {
 	}
 }
 
-
+/**
+ * Starts the game timer.
+ * @param {number} duration - The duration of the game in seconds.
+ */
 function startTimer(duration) {
 	let time = duration;
 	countdown = setInterval(() => {
@@ -132,6 +159,9 @@ function startTimer(duration) {
 	}, 1000);
 }
 
+/**
+ * Starts the game.
+ */
 function startGame() {
 	startButton.disabled = true; // Disable the play button
 	startButton.style.display = 'none'; // Hide the play button
@@ -150,6 +180,9 @@ function startGame() {
 	}, 1000);
 }
 
+/**
+ * Ends the game.
+ */
 function endGame() {
 	timeUp = true;
 	clearTimeout(timer);
@@ -162,6 +195,10 @@ function endGame() {
 		" points. Try again to see if you can do better!");
 }
 
+/**
+ * Handles whacking an animal.
+ * @param {Event} e - The click event.
+ */
 function whack(e) {
 	if (!e.isTrusted) return;
 	if (this.classList.contains('rat')) {
@@ -181,11 +218,13 @@ function whack(e) {
 
 }
 
+//Event Listeners
 startButton.addEventListener('click', startGame);
 rats.forEach(rat => rat.addEventListener('click', whack));
 mice.forEach(mouse => mouse.addEventListener('click', whack));
 frogs.forEach(frog => frog.addEventListener('click', whack));
 
+// Exports for jest
 //module.exports = {
 // startButton,
 //  scoreBoard,
