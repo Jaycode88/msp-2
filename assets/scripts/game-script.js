@@ -190,9 +190,11 @@ function endGame() {
 	gameArea.style.display = 'none';
 	startButton.disabled = false; // enable the play button
 	startButton.style.display = 'inline-block'; // show the play button
-	//show alert with player score
+	//show alert with player score after 1 second time delay
+	setTimeout(() => {
 	alert("Game Over! Well done, you recieved " + score +
 		" points. Try again to see if you can do better!");
+	},1000);
 }
 
 /**
