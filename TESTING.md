@@ -295,7 +295,7 @@ I did look into how to mock functions and made a few attempts but without a more
 
 ### Fixed bugs
 
-When first testing I noticed that when playing on desktop, If the user double-clicked on the animal they gained double points. I added code to remove the click event listener for jus 0.25 seconds while the animal dissapeared again. This solved the problem. Please see the code below which was put within the whack event function to stop the double-click bug..
+When first testing I noticed that when playing on desktop, If the user double-clicked on the animal they gained double points. I added code to remove the click event listener for just 0.25 seconds while the animal dissapeared again. This solved the problem. Please see the code below which was put within the whack event function to stop the double-click bug..
 
 ```
 this.removeEventListener('click', whack); // remove EL to stop double click double points
