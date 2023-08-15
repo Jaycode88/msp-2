@@ -169,7 +169,6 @@ I fully acknowledge and understand that, in a real-world scenario, an extensive 
 ### JavaScript (Jest Testing)
 
 I have used the [Jest](https://jestjs.io) version 26.6.3 JavaScript testing framework to test the application functionality.
-
 In order to work with Jest, I first had to initialize NPM.
 
 - `npm init`
@@ -251,6 +250,8 @@ Below are the results from the tests that I've written for this application:
 
 #### Jest Test Issues
 
+I attempted to use Jest for the suggested TDD(Test driven development) method. I was able to do this with the variables but ran into problems when I attempted to test functions, Therefore I did as much TDD as possible then went on to finish the project and re-attempt further tests at the end. Please see details below.
+
 I first attempted to set up my Jest tests by mocking the Dom, I found I was not able to pass the simplest of tests, I re-watched the walkthrough content and decided to use the Jest spy method which enabled me to pass the tests shown above.
 
 After passing the 7 tests I went on to attemp to test the startGame function but ran into difficulty due to not being able to re-asign to constant variables. Therefore I attempted to change the imports from const to let, see below:
@@ -289,7 +290,7 @@ I ran the test and recieved a fail. It would seem that the function is not being
 
 ![screenshot](documentation/newfail.png)
 
-I did look into how to mock functions and made a few attempts but without a more comprehensive coverage of jest testing in the course content, I found it extremely hard to move foward.
+I took some time to explore how to mock functions and made several attempts. However, due to the limited coverage of Jest testing in the course content, I encountered significant challenges in progressing further.
 
 ## Bugs
 
